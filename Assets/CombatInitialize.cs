@@ -36,11 +36,11 @@ public class CombatInitialize : MonoBehaviour {
     void initializeOnePlayerWithACameraFollowing()
     {
 		if (PhotonNetwork.isMasterClient) {
-			GameObject player = PhotonNetwork.Instantiate ("Kristoph2", spawnLocations [0].transform.position, playerRotation, 0) as UnityEngine.GameObject;
+			GameObject player = PhotonNetwork.Instantiate ("Kristoph3", spawnLocations [0].transform.position, playerRotation, 0) as UnityEngine.GameObject;
 		}
 		else
 		{
-			GameObject player = PhotonNetwork.Instantiate("Kristoph2", spawnLocations[1].transform.position, playerRotation, 0) as UnityEngine.GameObject;
+			GameObject player = PhotonNetwork.Instantiate("Kristoph3", spawnLocations[1].transform.position, playerRotation, 0) as UnityEngine.GameObject;
 		}
 
     }

@@ -1,26 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerInventory : Photon.MonoBehaviour {
+public class PlayerInventory : PlayerBase {
 
 	public GameObject[] guns;
 	int currentWeoponIndex = 0;
 	// Use this for initialization
 	void Start () {
-
 		loadOwnedWeapons ();
-
 	}
 
 	public void loadOwnedWeapons()
 	{
 		for (int i = 0; i < guns.Length; i++) {
-			if(photonView.isMine)
-				guns[i].GetComponent<Gun>().setOwned(true);
+            if (photonView.isMine) {
+                guns[i].GetComponent<Gun>().setActive(true);
+                guns[i].GetComponent<Gun>().setOwned(true, this.player);
+            }
 			if(guns[i].GetComponent<Gun>().name != "DefaultGun")
 			{
-				guns[i].SetActive(false);
-				guns[i].GetComponent<Gun>().crossHair.SetActive(false);
+				guns[i].GetComponent<Gun>().setActive(false);
+                guns[i].GetComponent<Gun>().setOwned(true, this.player);
 			}
 		}
 
@@ -58,13 +58,10 @@ public class PlayerInventory : Photon.MonoBehaviour {
 		for (int i = 0; i < guns.Length; i++) {
 			if(guns[i].GetComponent<Gun>().name != gunName)
 			{
-				guns[i].SetActive(false);
-				guns[i].GetComponent<Gun>().crossHair.SetActive(false);
+				guns[i].GetComponent<Gun>().setActive(false);
 			}
 			else{
-				guns[i].SetActive(true);
-				guns[i].GetComponent<Gun>().crossHair.SetActive(true);
-				//guns[i].GetComponent<Gun>().setOwned(true);
+				guns[i].GetComponent<Gun>().setActive(true);
 			}
 		}
 	}
