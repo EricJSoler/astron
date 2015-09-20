@@ -3,26 +3,26 @@ using System.Collections;
 
 public abstract class Gun : MonoBehaviour {
 
-	public Camera myCamera;
-	//public int bulletSpeed;
-	//public GameObject bullet;
+    [System.Serializable]
+    public class CrossHairSettings
+    {
+        public Texture2D fTexture;
+        public Texture2D eTexture;
+        public Vector2 location = Vector2.zero;
+        public Vector2 scale = Vector2.zero;
+    }
+
+    public CrossHairSettings crossHairSettings = new CrossHairSettings();
+    protected Player ownedPlayer;
 	public string name;
-	public bool owned;
-	public Collider myCollider;
+	protected bool owned;
+    protected bool active;
 
-
-	public GameObject crossHair;
-	public int gunRange;
-	//center the raycast
-	public int aimerXCoordinates;
-	public int aimerYCoordinates;
-
-
+    protected int gunRange;
+	
 	// Use this for initialization
 	void Start () {
-
-		myCollider = this.gameObject.GetComponent<Collider> ();
-		//crossHair.transform.position = new Vector3 (Screen.width / 2, Screen.height / 2, this.gameObject.transform.position.z + 8);
+	
 	}
 	
 	// Update is called once per frame
@@ -30,12 +30,14 @@ public abstract class Gun : MonoBehaviour {
 
 	}
 	
+    //Use crosshair settings and some sort of raycast
+    //to see if a player is infront of the gun
 	public abstract void fireShot();
 	public abstract void aim();
-
-	public abstract void initializeCamera();
-
-	public abstract void setOwned(bool switchbool);
+    //Give a gun a reference to a player this will mean it is owned
+    //this is only ran if photonview is mine
+	public abstract void setOwned(bool switchbool, Player player);
+    public abstract void setActive(bool switchActivation);
 
 
 

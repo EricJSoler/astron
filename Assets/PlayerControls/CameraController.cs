@@ -173,4 +173,15 @@ public class CameraController : MonoBehaviour
     {
         vOrbitInput = orbitX;
     }
+
+    Camera m_Camera;
+    public Camera Camera
+    {
+        get
+        {
+            if (m_Camera == null)
+                m_Camera = GetComponent<Camera>();
+            return m_Camera;
+        }
+    }
 }
