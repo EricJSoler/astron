@@ -65,7 +65,8 @@ public class PortalGun : Gun {
                 else if (hit.collider.gameObject.tag == "Enemy") {
                     MeleeEnemy enemy = hit.collider.gameObject.GetComponent<MeleeEnemy>();
                     enemy.iShotYou(ownedPlayer);
-                    enemy.health -= 25;
+                     float damage = (25 * ownedPlayer.sCharacterClass.attackDamage);
+                     enemy.photonView.RPC("recieveDamage", PhotonTargets.All, damage);
                 }
 
             }

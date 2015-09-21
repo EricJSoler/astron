@@ -23,6 +23,11 @@ public abstract class BaseCharacterClass
         get { return m_stats.level; }
     }
 
+    public float attackDamage
+    {
+        get { return m_stats.attackDamage; }
+    }
+
     public int experience
     {
         get { return m_stats.currentExperience; }

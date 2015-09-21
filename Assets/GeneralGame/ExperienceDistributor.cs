@@ -16,12 +16,12 @@ public static class ExperienceDistributor {
         int experienceGained;
 
         if (killerLev < killedLevel) {
-            experienceGained = killedLevel - killerLev * 10 + 100;
+            experienceGained = killedLevel - killerLev * 10 + 50;
         }
         else if (killerLev > killedLevel)
-            experienceGained = (int)(100 - (100 * (killerLev - killedLevel) * .1));
+            experienceGained = (int)(50 - (10 * (killerLev - killedLevel)));
         else
-            experienceGained = 100;
+            experienceGained = 50;
 
         killer.sCharacterClass.gainExperience(experienceGained);
     }

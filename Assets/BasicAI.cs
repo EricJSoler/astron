@@ -10,16 +10,21 @@ public class BasicAI : MonoBehaviour
     Vector3 destination;
     Rigidbody myBody;
     public LayerMask ground;
+    MeleeEnemy myMelee;
     void Start()
     {
         target = FindObjectOfType<Player>().gameObject.transform;
-        agent = GetComponent<NavMeshAgent>();
-        myBody = GetComponent<Rigidbody>();
+        if (target) {
+            agent = GetComponent<NavMeshAgent>();
+            myBody = GetComponent<Rigidbody>();
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(target)
             agent.SetDestination(target.position);
     }
 
