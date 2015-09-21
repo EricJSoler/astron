@@ -60,14 +60,12 @@ public class PortalGun : Gun {
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, gunRange)) {
                 if (hit.collider.gameObject.tag == "Player") {
-                    hit.collider.gameObject.GetComponent<Player>().photonview.RPC("recieveDamage", PhotonTargets.All, 25f);
-                    Debug.DrawLine(ray.origin, hit.point);
+                    hit.collider.gameObject.GetComponent<Player>().photonView.RPC("recieveDamage", PhotonTargets.All, 25f);
                 }
                 else if (hit.collider.gameObject.tag == "Enemy") {
-
                     MeleeEnemy enemy = hit.collider.gameObject.GetComponent<MeleeEnemy>();
+                    enemy.iShotYou(ownedPlayer);
                     enemy.health -= 25;
-                    Debug.DrawLine(ray.origin, hit.point);
                 }
 
             }
@@ -84,18 +82,17 @@ public class PortalGun : Gun {
 
     public override void setActive(bool switchActivation)
     {
+     
         active = switchActivation;
         if (active) {
-            MeshRenderer[] meshes = gameObject.GetComponentsInChildren<MeshRenderer>();
-            foreach (MeshRenderer element in meshes) {
-                element.enabled = true;
-            }
+            MeshRenderer mesh = gameObject.GetComponentInChildren<MeshRenderer>();
+            mesh.enabled = true;
         }
         else {
-            MeshRenderer[] meshes = gameObject.GetComponentsInChildren<MeshRenderer>();
-            foreach (MeshRenderer element in meshes)
-                element.enabled = false;
+            MeshRenderer mesh = gameObject.GetComponentInChildren<MeshRenderer>();
+            mesh.enabled = false;
         }
+   
     }
 
     void OnGUI()

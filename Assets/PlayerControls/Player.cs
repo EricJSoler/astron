@@ -23,38 +23,14 @@ public class Player : PlayerBase
 
     void Update()
     {
-        if (photonview.isMine) {
+        if (photonView.isMine) {
             PlayerController.GetInput();
+            if (sCharacterClass.currentHealth <= 0) {
+                Debug.Log("your dead");
+                PhotonNetwork.Instantiate("CartoonExplosion", this.transform.position, transform.rotation, 0);
+                photonView.RPC("destroyThisPlayer", PhotonTargets.AllBuffered);
+            }
         }
-        playerControls();
-
-        if (DataHolder.CharacterClass.CurrentHealth <= 0) {
-            if (photonview.isMine)
-			{
-                PhotonNetwork.Destroy(this.gameObject);
-			}
-            else
-			{
-                Destroy(this.gameObject);
-			}
-			PhotonNetwork.Instantiate("CartoonExplosion",this.transform.position,transform.rotation,0);
-        }
-
-    }
-
-    public void playerControls()
-    {
-        if (Input.GetKeyDown(KeyCode.E)) {
-            if (photonview.isMine)
-                PlayerInventory.photonView.RPC("switchGun", PhotonTargets.All);
-        }
-
-        if (Input.GetMouseButtonDown(0)) {
-
-            PlayerInventory.getCurrentWeapon().GetComponent<Gun>().fireShot();
-        }
-
-
     }
 
     public void recieveInput(float pauseInput)
@@ -72,15 +48,37 @@ public class Player : PlayerBase
 	[PunRPC]
     public void recieveDamage(float amount)
     {
-        if (photonview.isMine) {
-            DataHolder.CharacterClass.CurrentHealth -= (int)amount;
+        if (photonView.isMine) {
+            sCharacterClass.loseHealth(amount);
         }
     }
 
-    void OnGUI(){
-        GUILayout.Label(DataHolder.CharacterClass.CurrentHealth.ToString());
+    [PunRPC]
+    public void destroyThisPlayer()
+    {
+
+        if (photonView.isMine) {
+            Debug.Log("your dead");
+            //Post to the screen taht you died probably do this  a cooler way later
+            CameraController.enabled = false;//turn off the camera controller avoid crash
+            gameObject.SetActive(false);
+            this.recieveInput(1);
+        }
+        else if (!photonView.isMine) {
+            Destroy(gameObject);
+        }
+       
     }
 
-
+    void OnGUI(){
+        if (photonView.isMine) {
+            GUILayout.Label(sCharacterClass.currentHealth.ToString() + " / "
+                + sCharacterClass.maxHealth.ToString());
+            GUILayout.Label(sCharacterClass.level.ToString());
+            GUILayout.Label(sCharacterClass.experience.ToString());
+            GUILayout.Label(sCharacterClass.reqExperience.ToString());
+        }
+        
+    }
 
 }

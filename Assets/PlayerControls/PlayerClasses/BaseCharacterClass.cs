@@ -1,52 +1,51 @@
 ﻿using UnityEngine;
 using System.Collections;
 [System.Serializable]
-public class BaseCharacterClass
+public abstract class BaseCharacterClass 
 {
+    public abstract void loseHealth(float amount);
+    public abstract void gainExperience(int amount);
     private string characterClassName;
     private string characterClassDescription;
-    [System.Serializable]
-    struct Stats
-    {
-        public int stamina;
-        public int endurance;
-        public int strength;
-        public int intellect;
-        public int attackDamage;
-        public int magicDamage;
-        public int currentHealth;
-        public int maxHealth;
-        public string myPlayersName;
-    }
+    protected Stats m_stats;
 
-    Stats m_stats;
-
-    public string CharacterClassName
-    {
-        get { return characterClassName; }
-        set { characterClassName = value; }
-    }
-
-    public string CharacterClassDescription
-    {
-        get { return characterClassDescription; }
-        set { characterClassDescription = value; }
-    }
-
-    public int AttackDamage
-    {
-        get { return m_stats.attackDamage; }
-        set { m_stats.attackDamage = value; }
-    }
-    public int CurrentHealth
+    public float currentHealth
     {
         get { return m_stats.currentHealth; }
-        set { m_stats.currentHealth = value; }
     }
-
-    public int MaxHealth
+    public float maxHealth
     {
         get { return m_stats.maxHealth; }
-        set { m_stats.maxHealth = value; }
     }
+
+    public int level
+    {
+        get { return m_stats.level; }
+    }
+
+    public int experience
+    {
+        get { return m_stats.currentExperience; }
+    }
+
+    public int reqExperience
+    {
+        get { return m_stats.requiredExperience; }
+    }
+
+   // public void notifyOfLevelChangeForNonLocalPlayer();
+}
+
+[System.Serializable]
+public struct Stats
+{
+    public string characterClassName;
+    public string characterClassDescription;
+    public float attackDamage;
+    public float currentHealth;
+    public float maxHealth;
+    public int level;
+    public int requiredExperience;
+    public int currentExperience;
+   
 }

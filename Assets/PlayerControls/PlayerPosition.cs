@@ -55,7 +55,7 @@ public class PlayerPosition : PlayerBase {
 
     void Update()
     {
-        if (photonview.isMine) {
+        if (photonView.isMine) {
             Turn();
         }
     }
@@ -109,7 +109,7 @@ public class PlayerPosition : PlayerBase {
             stream.SendNext(rBody.velocity);
 
         }
-        else {
+        else if(stream.isReading){
             // Network player, receive data
             this.correctPlayerPos = (Vector3)stream.ReceiveNext();
             this.correctPlayerRot = (Quaternion)stream.ReceiveNext();

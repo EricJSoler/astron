@@ -14,7 +14,7 @@ public abstract class Gun : MonoBehaviour {
 
     public CrossHairSettings crossHairSettings = new CrossHairSettings();
     protected Player ownedPlayer;
-	public string name;
+	public new string name;
 	protected bool owned;
     protected bool active;
 

@@ -35,26 +35,56 @@ public class PlayerController : PlayerBase
     {
         m_controlsOn = true;
     }
-   
+
     public void GetInput()
     {
         if (m_controlsOn) {
-            forwardInput = Input.GetAxis(inputSetting.FORWARD_AXIS);//Get axis returns value from -1 to 1;
-            turnInput = Input.GetAxis(inputSetting.TURN_AXIS);
-            strafeInput = Input.GetAxis(inputSetting.STRAFE_AXIS);
-            vOrbitInput = Input.GetAxisRaw(inputSetting.ORBIT_VERTICAL);//interpolated meaning it will return any value from -1 to 1
-            jumpInput = Input.GetAxisRaw(inputSetting.JUMP_AXIS);//not interpolated you will get -1 0 or 1
-            chatInput = Input.GetAxisRaw(inputSetting.CHAT_AXIS);
-            pauseInput = Input.GetAxisRaw(inputSetting.PAUSE_AXIS);
-            //weaponInput = Input.GetAxisRaw(inputSetting.ACTIVE_WEAPONINPUT);
-      //      PlayerInventory.recieveInput(weaponInput);
-            PlayerPosition.recieveInput(forwardInput, turnInput, jumpInput, strafeInput);
-            CameraController.receieveInput(vOrbitInput);
-            PlayerChat.recieveInput(chatInput);
+            getMovementInput();
+            getInventoryInput();
         }
+        getChatInput();
+        pauseMenuInput();
+
+    }
+
+    void getInventoryInput()
+    {
+        if (Input.GetKeyDown(KeyCode.E)) {
+            if (photonView.isMine)
+                PlayerInventory.photonView.RPC("switchGun", PhotonTargets.All);
+                //PlayerInventory.switchGun();
+        }
+
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.T)) {
+
+            PlayerInventory.getCurrentWeapon().GetComponent<Gun>().fireShot();
+        }
+
+    }
+
+    void pauseMenuInput()
+    {
         pauseInput = Input.GetAxisRaw(inputSetting.PAUSE_AXIS);
         player.recieveInput(pauseInput);
     }
+
+    void getChatInput()
+    {
+        chatInput = Input.GetAxisRaw(inputSetting.CHAT_AXIS);
+        PlayerChat.recieveInput(chatInput);
+    }
+
+    void getMovementInput()
+    {
+        forwardInput = Input.GetAxis(inputSetting.FORWARD_AXIS);//Get axis returns value from -1 to 1;
+        turnInput = Input.GetAxis(inputSetting.TURN_AXIS);
+        strafeInput = Input.GetAxis(inputSetting.STRAFE_AXIS);
+        vOrbitInput = Input.GetAxisRaw(inputSetting.ORBIT_VERTICAL);//interpolated meaning it will return any value from -1 to 1
+        jumpInput = Input.GetAxisRaw(inputSetting.JUMP_AXIS);//not interpolated you will get -1 0 or 1
+        PlayerPosition.recieveInput(forwardInput, turnInput, jumpInput, strafeInput);
+        CameraController.receieveInput(vOrbitInput);
+    }
+
 
 
     bool m_controlsOn;

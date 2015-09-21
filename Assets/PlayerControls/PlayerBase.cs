@@ -22,18 +22,18 @@ public class PlayerBase : Photon.MonoBehaviour
         }
     }
 
-    PhotonView m_photonView;
-    public PhotonView photonview
-    {
-        get
-        {
-            if (m_photonView == null) {
-                m_photonView = GetComponent<PhotonView>();
-            }
+    //PhotonView m_photonView;
+    //public PhotonView photonview
+    //{
+    //    get
+    //    {
+    //        if (m_photonView == null) {
+    //            m_photonView = GetComponent<PhotonView>();
+    //        }
 
-            return m_photonView;
-        }
-    }
+    //        return m_photonView;
+    //    }
+    //}
 
     PlayerPosition m_PlayerPosition;
     public PlayerPosition PlayerPosition
@@ -53,7 +53,7 @@ public class PlayerBase : Photon.MonoBehaviour
     {
         get
         {
-            if (m_playerController == null && photonview.isMine) {
+            if (m_playerController == null && photonView.isMine) {
                 m_playerController = GetComponent<PlayerController>();
             }
             return m_playerController;
@@ -97,15 +97,41 @@ public class PlayerBase : Photon.MonoBehaviour
         }
     }
 
+    BaseCharacterClass m_characterClass;
+    public BaseCharacterClass sCharacterClass
+    {
+        get
+        {
+            if (photonView.isMine) {
+                if(m_characterClass == null)
+                    m_characterClass = DataHolder.CharacterClass;
+
+                return m_characterClass;
+            }
+            else {
+                Debug.Log("you shouldnt be accessing this BASECHARACTERCLASS");
+                return null;
+            }
+
+        }
+    }
+    
     DataHolder m_dataHolder;
     public DataHolder DataHolder
     {
         get
         {
-            if (m_dataHolder == null) {
-                m_dataHolder = FindObjectOfType<DataHolder>();
+            if (photonView.isMine) {
+                if (m_dataHolder == null) {
+                    m_dataHolder = FindObjectOfType<DataHolder>();
+                }
+                return m_dataHolder;
             }
-            return m_dataHolder;
+            else {
+                Debug.LogError("you do not have access to this dataHolder PlayerBase because this isnt your photonview");
+                return null;
+            }
+                
         }
     }
 }
