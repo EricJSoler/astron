@@ -60,14 +60,16 @@ public class DefaultGun : Gun{
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, gunRange)) {
                 if (hit.collider.gameObject.tag == "Player") {
-                    hit.collider.gameObject.GetComponent<Player>().photonview.RPC("recieveDamage", PhotonTargets.All, 25f);
-                    Debug.DrawLine(ray.origin, hit.point);
+                    hit.collider.gameObject.GetComponent<Player>().photonView.RPC("recieveDamage", PhotonTargets.All, 25f);
+                  
                 }
                 else if (hit.collider.gameObject.tag == "Enemy") {
 
                     MeleeEnemy enemy = hit.collider.gameObject.GetComponent<MeleeEnemy>();
-                    enemy.health -= 25;
-                    Debug.DrawLine(ray.origin, hit.point);
+                    enemy.iShotYou(ownedPlayer);
+                    float damage = (float)(25 * ownedPlayer.sCharacterClass.attackDamage);
+                    enemy.photonView.RPC("recieveDamage", PhotonTargets.All, damage);
+                   
                 }
 
             }
@@ -107,6 +109,7 @@ public class DefaultGun : Gun{
 
     void drawCrossHair()
     {
+      
         float crossHairRectLocX = Screen.width / 2 - (crossHairSettings.scale.x / 2);
         float crossHairRectLocY = (Screen.height / 2) - (crossHairSettings.scale.y / 2) - 10;
         GUI.DrawTexture(new Rect(new Vector2(crossHairRectLocX, crossHairRectLocY)

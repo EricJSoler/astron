@@ -36,8 +36,10 @@ public class PlayerInventory : PlayerBase {
 	{
 		currentWeoponIndex++;
 		currentWeoponIndex %= guns.Length;
-		this.photonView.RPC("setGun",PhotonTargets.All,(guns[currentWeoponIndex].GetComponent<Gun>().name));
-	}
+        string nameToSend = guns[currentWeoponIndex].GetComponent<Gun>().name;
+		photonView.RPC("setGun",PhotonTargets.All,nameToSend);
+        //this.setGun(nameToSend);
+    }
 
 
 	public GameObject getCurrentWeapon()

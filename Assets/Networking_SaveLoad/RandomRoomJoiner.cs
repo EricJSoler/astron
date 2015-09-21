@@ -43,7 +43,6 @@ public class RandomRoomJoiner : Photon.PunBehaviour
     public override void OnJoinedRoom()
     {
         DataHolder dataObj = FindObjectOfType<DataHolder>();
-        Debug.Log(dataObj.LastScene);
         PhotonNetwork.LoadLevel(3);
     }
 }
