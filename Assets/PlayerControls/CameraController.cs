@@ -48,23 +48,21 @@ public class CameraController : MonoBehaviour
     bool initializedWithPlayer;
     Vector3 targetPos = Vector3.zero;
     Vector3 destination = Vector3.zero;
-    PlayerController charController;
     float vOrbitInput, hOrbitInput, zoomInput, hOrbitSnapInput;
     // Use this for initialization
     void Awake()
     {
-        if (!GetComponentInParent<PhotonView>().isMine) {
-            GetComponent<Camera>().enabled = false;
-            this.enabled = false;
-        }
+        initializedWithPlayer = false;
     }
     void Start()
     {
-        setCameraTarget(target);
-        moveToTarget();
         vOrbitInput = hOrbitInput = zoomInput = 0;
         hOrbitSnapInput = 1;
-        orbitTarget();
+        if (initializedWithPlayer) {
+            moveToTarget();
+            orbitTarget();
+        }
+
     }
 
 
@@ -141,32 +139,14 @@ public class CameraController : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(targetPos - transform.position); //subtract our transform from the target we want to look at
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, position.lookSmooth * Time.deltaTime);
     }
-    public void setCameraTarget(Transform t)
+    public void setCameraTarget(GameObject playerObj)
     {
-        target = t;
+        target = playerObj.transform;
         if (target != null) {
-            if (target.GetComponent<PlayerController>()) {
-                charController = target.GetComponent<PlayerController>();
-                initializedWithPlayer = true;
-
-            }
-            else
-                Debug.LogError("the camera needs  a PLayerController");
+            initializedWithPlayer = true;
         }
         else
             Debug.LogError("Camera needs a target");
-    }
-
-    public void initializeCameraOnPlayer(Transform t)
-    {
-        setCameraTarget(t);
-        Debug.Log("setCameraDone");
-        Debug.Log(t);
-        if (initializedWithPlayer) {
-
-        }
-
-
     }
 
     public void receieveInput(float orbitX)

@@ -22,19 +22,6 @@ public class PlayerBase : Photon.MonoBehaviour
         }
     }
 
-    //PhotonView m_photonView;
-    //public PhotonView photonview
-    //{
-    //    get
-    //    {
-    //        if (m_photonView == null) {
-    //            m_photonView = GetComponent<PhotonView>();
-    //        }
-
-    //        return m_photonView;
-    //    }
-    //}
-
     PlayerPosition m_PlayerPosition;
     public PlayerPosition PlayerPosition
     {
@@ -90,8 +77,8 @@ public class PlayerBase : Photon.MonoBehaviour
         get
         {
             if (m_playerCamera == null) {
-                GameObject parent = transform.parent.gameObject;
-                m_playerCamera = parent.GetComponentInChildren<CameraController>();
+                GameObject cameraObj = GameObject.FindGameObjectWithTag("PlayerCamera");
+                m_playerCamera = cameraObj.GetComponent<CameraController>();
             }
             return m_playerCamera;
         }
