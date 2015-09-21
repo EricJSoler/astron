@@ -7,7 +7,6 @@ using System.Collections;
 // contain methods to manipulate the other components attached to the player
 public class Player : PlayerBase
 {
-
     PauseMenu pauseMenuInScene;
 
     void Start()
@@ -68,17 +67,6 @@ public class Player : PlayerBase
             Destroy(gameObject);
         }
        
-    }
-
-    void OnGUI(){
-        if (photonView.isMine) {
-            GUILayout.Label(sCharacterClass.currentHealth.ToString() + " / "
-                + sCharacterClass.maxHealth.ToString());
-            GUILayout.Label(sCharacterClass.level.ToString());
-            GUILayout.Label(sCharacterClass.experience.ToString());
-            GUILayout.Label(sCharacterClass.reqExperience.ToString());
-        }
-        
     }
 
 }

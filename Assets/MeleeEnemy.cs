@@ -5,23 +5,17 @@ using System.Collections.Generic;
 public class MeleeEnemy : Photon.MonoBehaviour {
 
     XpTimer myXpTimer;
-    public int health;
+    public int health = 100;
     public int level = 1;
-	//public ParticleSystem hitParticle;
 	bool playOnce;
-	// Use this for initialization
 	void Start () {
-		//hitParticle = GetComponentInChildren<ParticleSystem> ();
-        health = 50;
         myXpTimer = new XpTimer();
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (health <= 0) {
-            myXpTimer.iDied(level, Time.time);
-			PhotonNetwork.Instantiate("CartoonExplosion",this.transform.position,transform.rotation,0);
-            Destroy(gameObject);
+            photonView.RPC("destroyMe", PhotonTargets.All);
         }
 	}
 
@@ -30,7 +24,15 @@ public class MeleeEnemy : Photon.MonoBehaviour {
         //Maybe delete the references to the players here 
     }
 
+    [PunRPC]
+    void destroyMe()
+    {
+        myXpTimer.iDied(level, Time.time);
+        if(photonView.isMine)
+            PhotonNetwork.Instantiate("CartoonExplosion", this.transform.position, transform.rotation, 0);
+        Destroy(gameObject);
 
+    }
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "Player") {

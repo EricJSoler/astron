@@ -41,7 +41,7 @@ public class CombatInitialize : MonoBehaviour {
 		}
 		else
 		{
-	        player = PhotonNetwork.Instantiate("Kristoph", spawnLocations[1].transform.position, playerRotation, 0) as UnityEngine.GameObject;
+	        player = PhotonNetwork.Instantiate("Kristoph", spawnLocations[0].transform.position, playerRotation, 0) as UnityEngine.GameObject;
 		}
 
         GameObject playerCameraObj = (GameObject)Instantiate(cameraPrefab, Vector3.zero, Quaternion.identity);

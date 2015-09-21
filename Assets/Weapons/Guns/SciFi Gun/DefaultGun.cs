@@ -67,7 +67,8 @@ public class DefaultGun : Gun{
 
                     MeleeEnemy enemy = hit.collider.gameObject.GetComponent<MeleeEnemy>();
                     enemy.iShotYou(ownedPlayer);
-                    enemy.health -= 25;
+                    float damage = (float)(25 * ownedPlayer.sCharacterClass.attackDamage);
+                    enemy.photonView.RPC("recieveDamage", PhotonTargets.All, damage);
                    
                 }
 
