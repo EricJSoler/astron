@@ -60,16 +60,16 @@ public class DefaultGun : Gun{
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, gunRange)) {
                 if (hit.collider.gameObject.tag == "Player") {
-                    hit.collider.gameObject.GetComponent<Player>().photonView.RPC("recieveDamage", PhotonTargets.All, 25f);
-                  
+                    Player enemy = hit.collider.gameObject.GetComponent<Player>();
+                    // redo this enemy.iShotYou(ownedPlayer);
+                    float damage = (20 * ownedPlayer.sCharacterClass.attackDamage);
+                    doDamage(damage, enemy);
                 }
                 else if (hit.collider.gameObject.tag == "Enemy") {
-
-                    MeleeEnemy enemy = hit.collider.gameObject.GetComponent<MeleeEnemy>();
-                    enemy.iShotYou(ownedPlayer);
-                    float damage = (float)(25 * ownedPlayer.sCharacterClass.attackDamage);
-                    enemy.photonView.RPC("recieveDamage", PhotonTargets.All, damage);
-                   
+                    AIEnemy enemy = hit.collider.gameObject.GetComponent<AIEnemy>();
+                    // redo this enemy.iShotYou(ownedPlayer);
+                    float damage = (20 * ownedPlayer.sCharacterClass.attackDamage);
+                    doDamage(damage, enemy);
                 }
 
             }

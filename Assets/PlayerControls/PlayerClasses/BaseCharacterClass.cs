@@ -18,9 +18,10 @@ public abstract class BaseCharacterClass
         get { return m_stats.maxHealth; }
     }
 
-    public int level
+    public virtual int level
     {
         get { return m_stats.level; }
+        set { Debug.Log("you are not allowed to set this charactersLevel"); }//do nothing on purpose
     }
 
     public float attackDamage

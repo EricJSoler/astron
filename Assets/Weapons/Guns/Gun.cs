@@ -39,6 +39,14 @@ public abstract class Gun : MonoBehaviour {
 	public abstract void setOwned(bool switchbool, Player player);
     public abstract void setActive(bool switchActivation);
 
+    protected virtual void doDamage(float amount, Player target)
+    {
+        target.photonView.RPC("recieveDamage", PhotonTargets.All, amount);
+    }
+    protected virtual void doDamage(float amount, AIEnemy target)
+    {
+        target.photonView.RPC("recieveDamage", PhotonTargets.All, amount);
+    }
 
 
 
