@@ -61,13 +61,13 @@ public class DefaultGun : Gun{
             if (Physics.Raycast(ray, out hit, gunRange)) {
                 if (hit.collider.gameObject.tag == "Player") {
                     Player enemy = hit.collider.gameObject.GetComponent<Player>();
-                    // redo this enemy.iShotYou(ownedPlayer);
+                    getKillCredit(ownedPlayer, enemy);
                     float damage = (20 * ownedPlayer.sCharacterClass.attackDamage);
                     doDamage(damage, enemy);
                 }
                 else if (hit.collider.gameObject.tag == "Enemy") {
                     AIEnemy enemy = hit.collider.gameObject.GetComponent<AIEnemy>();
-                    // redo this enemy.iShotYou(ownedPlayer);
+                    getKillCredit(ownedPlayer, enemy);
                     float damage = (20 * ownedPlayer.sCharacterClass.attackDamage);
                     doDamage(damage, enemy);
                 }

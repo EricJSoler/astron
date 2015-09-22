@@ -102,6 +102,17 @@ public class PlayerBase : Photon.MonoBehaviour
 
         }
     }
+
+    PlayerVisuals m_playerVisuals;
+    public PlayerVisuals Visuals
+    {
+        get{
+            if(m_playerVisuals == null)
+                m_playerVisuals = GetComponent<PlayerVisuals>();
+            
+            return m_playerVisuals;
+        }
+    }
     
     DataHolder m_dataHolder;
     public DataHolder DataHolder

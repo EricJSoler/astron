@@ -17,7 +17,6 @@ public class KyleInstantiator : MonoBehaviour {
 
     void startInstantiatingOnNetwork()
     {
-        Debug.Log("made it here");
         StartCoroutine(performInstantiate());
         if (count == 5) {
             if(transform.position.x >= -150)
@@ -31,8 +30,7 @@ public class KyleInstantiator : MonoBehaviour {
 
     IEnumerator performInstantiate()
     {
-        PhotonNetwork.Instantiate("AIKyle", gameObject.transform.position, Quaternion.identity, 0);
-        Debug.Log("should be instantiating");
+        PhotonNetwork.Instantiate("Cylinder", gameObject.transform.position, Quaternion.identity, 0);
         yield return new WaitForSeconds(5);
         startInstantiatingOnNetwork();
         count++;

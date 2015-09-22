@@ -51,4 +51,16 @@ public abstract class AIBase : Photon.MonoBehaviour {
             return m_AIStats;
         }
     }
+
+    AIVisuals m_AIVisuals;
+    public AIVisuals aiVisual
+    {
+        get
+        {
+            if (m_AIVisuals == null) {
+                m_AIVisuals = GetComponent<AIVisuals>();
+            }
+            return m_AIVisuals;
+        }
+    }
 }

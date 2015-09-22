@@ -2,10 +2,10 @@
 using System.Collections;
 
 public class AIEnemy : AIBase {
-
+    XpTimer myXpTimer;
 	// Use this for initialization
 	void Start () {
-	
+        myXpTimer = new XpTimer();
 	}
 	
 	// Update is called once per frame
@@ -34,5 +34,11 @@ public class AIEnemy : AIBase {
      public void destroyThisPlayer()
      {
          Destroy(gameObject);
+     }
+
+     public void requestXPOnDeath(Player shotMe)
+     {
+         myXpTimer.addComponent(shotMe);
+         myXpTimer.getRidOfExtras();
      }
 }

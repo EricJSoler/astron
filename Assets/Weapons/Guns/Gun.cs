@@ -48,6 +48,18 @@ public abstract class Gun : MonoBehaviour {
         target.photonView.RPC("recieveDamage", PhotonTargets.All, amount);
     }
 
+    protected virtual void getKillCredit(Player shooter, AIEnemy shot)
+    {
+        shot.requestXPOnDeath(shooter);
+    }
+
+    protected virtual void getKillCredit(Player shooter, Player shot)
+    {
+        shot.requestXPOnDeath(shooter);
+    }
+
+
+
 
 
 

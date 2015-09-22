@@ -8,10 +8,12 @@ using System.Collections;
 public class Player : PlayerBase
 {
     PauseMenu pauseMenuInScene;
+    XpTimer myXpTimer;
 
     void Start()
     {
         pauseMenuInScene = FindObjectOfType<PauseMenu>();
+        myXpTimer = new XpTimer();
     }
 
 
@@ -43,7 +45,6 @@ public class Player : PlayerBase
             PlayerController.ControlsOn = true;
         }
     }
-
 	[PunRPC]
     public void recieveDamage(float amount)
     {
@@ -55,7 +56,6 @@ public class Player : PlayerBase
     [PunRPC]
     public void destroyThisPlayer()
     {
-
         if (photonView.isMine) {
             Debug.Log("your dead");
             //Post to the screen taht you died probably do this  a cooler way later
@@ -66,7 +66,13 @@ public class Player : PlayerBase
         else if (!photonView.isMine) {
             Destroy(gameObject);
         }
-       
+        myXpTimer.iDied(sCharacterClass.level, Time.time);
+    }
+
+    public void requestXPOnDeath(Player shotMe)
+    {
+        myXpTimer.addComponent(shotMe);
+        myXpTimer.getRidOfExtras();
     }
 
 }
