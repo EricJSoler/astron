@@ -6,12 +6,11 @@ public class AIStats : AIBase {
     //This should be assigned from the inspector
     public BaseAICharacterClass sCharacterStats;
     public string typeOfAiStats;
-    public int startingLevel;
 	// Use this for initialization
 	void Start () {
         switch (typeOfAiStats) {
             case "MeleeEnemy":
-                sCharacterStats = new AICharacterMelee(startingLevel);
+                sCharacterStats = new AICharacterMelee();
                 break;
         }
 	}

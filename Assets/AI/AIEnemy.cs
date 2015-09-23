@@ -33,6 +33,8 @@ public class AIEnemy : AIBase {
      [PunRPC]
      public void destroyThisPlayer()
      {
+         myXpTimer.iDied(aiStats.level, Time.time);
+         aiVisual.deathVisuals();
          Destroy(gameObject);
      }
 

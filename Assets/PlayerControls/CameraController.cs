@@ -69,7 +69,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (initializedWithPlayer) {
+        if (initializedWithPlayer && target) {
             // getInput();
             orbitTarget();
             zoomInOnTarget();
@@ -78,7 +78,7 @@ public class CameraController : MonoBehaviour
     }
     void LateUpdate()
     {
-        if (initializedWithPlayer) {
+        if (initializedWithPlayer && target) {
             moveToTarget();
             lookAtTarget();
         }

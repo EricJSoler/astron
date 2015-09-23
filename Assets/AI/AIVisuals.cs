@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class AIVisuals : AIBase {
-
+    public GameObject deathExplosion;
 	// Use this for initialization
 	void Start () {
 	
@@ -12,4 +12,10 @@ public class AIVisuals : AIBase {
 	void Update () {
 	
 	}
+
+    public void deathVisuals()
+    {
+        Instantiate(deathExplosion, gameObject.transform.position, gameObject.transform.rotation);
+    }
+
 }

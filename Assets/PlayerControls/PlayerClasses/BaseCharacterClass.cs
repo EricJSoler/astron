@@ -29,6 +29,19 @@ public abstract class BaseCharacterClass
         get { return m_stats.attackDamage; }
     }
 
+    public float electronics
+    {
+        get { return m_stats.electronics; }
+    }
+
+    public float movementSpeed
+    {
+        get { return m_stats.movementSpeed; }
+    }
+    public float jumpPower
+    {
+        get { return m_stats.jumpPower; }
+    }
     public int experience
     {
         get { return m_stats.currentExperience; }
@@ -48,6 +61,9 @@ public struct Stats
     public string characterClassName;
     public string characterClassDescription;
     public float attackDamage;
+    public float electronics;
+    public float movementSpeed;
+    public float jumpPower;
     public float currentHealth;
     public float maxHealth;
     public int level;
