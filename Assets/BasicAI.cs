@@ -11,6 +11,7 @@ public class BasicAI : MonoBehaviour
     Rigidbody myBody;
     public LayerMask ground;
     MeleeEnemy myMelee;
+
     void Start()
     {
         target = FindObjectOfType<Player>().gameObject.transform;

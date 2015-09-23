@@ -17,6 +17,10 @@ public class DefaultGun : Gun{
         crossHairSettings.scale.x = 30;
         crossHairSettings.scale.y = 30;
         guiCrossHairTexture = crossHairSettings.eTexture;
+
+		//fire type
+		myGunFireControl = new SingleShotFireControl (this);
+
     }
 
     // Update is called once per frame
@@ -27,54 +31,67 @@ public class DefaultGun : Gun{
         crossHairSettings.location.y = (Screen.height / 2) - 10;
     }
 
+	public override GunFireControl getControls()
+	{
+
+		return myGunFireControl;
+	}
+
+
+
+
     public override void aim()
     {
         if (owned && active) {
-            Ray ray = ownedPlayer.CameraController.Camera.ScreenPointToRay(
-                new Vector3(crossHairSettings.location.x, crossHairSettings.location.y));
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, gunRange)) {
 
-                if (hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Enemy") {
-                    guiCrossHairTexture = crossHairSettings.fTexture;
-                }
-                else {
-                    guiCrossHairTexture = crossHairSettings.eTexture;
 
-                }
-            }
-            else {
-                guiCrossHairTexture = crossHairSettings.fTexture;
+				Ray ray = ownedPlayer.CameraController.Camera.ScreenPointToRay (
+                new Vector3 (crossHairSettings.location.x, crossHairSettings.location.y));
+				RaycastHit hit;
+				if (Physics.Raycast (ray, out hit, gunRange)) {
 
-            }
-        }
+					if (hit.collider.gameObject.tag == "Player" || hit.collider.gameObject.tag == "Enemy") {
+						guiCrossHairTexture = crossHairSettings.fTexture;
+					} else {
+						guiCrossHairTexture = crossHairSettings.eTexture;
+
+					}
+				} else {
+					guiCrossHairTexture = crossHairSettings.fTexture;
+
+				}
+			}
+
 
 
     }
 
     public override void fireShot()
     {
+
+
         if (owned && active) {
-            Ray ray = ownedPlayer.CameraController.Camera.ScreenPointToRay(
-                new Vector3(crossHairSettings.location.x, crossHairSettings.location.y));
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, gunRange)) {
-                if (hit.collider.gameObject.tag == "Player") {
-                    hit.collider.gameObject.GetComponent<Player>().photonView.RPC("recieveDamage", PhotonTargets.All, 25f);
+		
+				Ray ray = ownedPlayer.CameraController.Camera.ScreenPointToRay (
+                new Vector3 (crossHairSettings.location.x, crossHairSettings.location.y));
+				RaycastHit hit;
+				if (Physics.Raycast (ray, out hit, gunRange)) {
+					if (hit.collider.gameObject.tag == "Player") {
+						hit.collider.gameObject.GetComponent<Player> ().photonView.RPC ("recieveDamage", PhotonTargets.All, 25f);
                   
-                }
-                else if (hit.collider.gameObject.tag == "Enemy") {
+					} else if (hit.collider.gameObject.tag == "Enemy") {
 
-                    MeleeEnemy enemy = hit.collider.gameObject.GetComponent<MeleeEnemy>();
-                    enemy.iShotYou(ownedPlayer);
-                    float damage = (float)(25 * ownedPlayer.sCharacterClass.attackDamage);
-                    enemy.photonView.RPC("recieveDamage", PhotonTargets.All, damage);
+						MeleeEnemy enemy = hit.collider.gameObject.GetComponent<MeleeEnemy> ();
+						enemy.iShotYou (ownedPlayer);
+						float damage = (float)(25 * ownedPlayer.sCharacterClass.attackDamage);
+						enemy.photonView.RPC ("recieveDamage", PhotonTargets.All, damage);
                    
-                }
+					}
 
-            }
+				}
 
-        }
+			
+		}
 
     }
 

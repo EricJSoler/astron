@@ -47,6 +47,8 @@ public class MeleeEnemy : Photon.MonoBehaviour {
 	{
 		
 		health -= (int)amount;
+		if(photonView.isMine)
+			PhotonNetwork.Instantiate("Sparks", this.transform.position, transform.rotation, 0);
 
 	}
 
