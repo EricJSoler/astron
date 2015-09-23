@@ -27,7 +27,9 @@ public class AIEnemy : AIBase {
      {
          if (photonView.isMine) {
              aiStats.loseHealth(amount);
+         
          }
+         aiVisual.beenShot();
      }
 
      [PunRPC]
