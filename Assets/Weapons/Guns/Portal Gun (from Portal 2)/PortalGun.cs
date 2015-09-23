@@ -17,6 +17,7 @@ public class PortalGun : Gun {
         crossHairSettings.scale.x = 100;
         crossHairSettings.scale.y = 100;
         guiCrossHairTexture = crossHairSettings.eTexture;
+        myGunFireControl = new MachineGunFireControl(0.5f, this);
     }
 
     // Update is called once per frame
@@ -50,6 +51,11 @@ public class PortalGun : Gun {
         }
 
 
+    }
+
+    public override GunFireControl getControls()
+    {
+        return myGunFireControl;
     }
 
     public override void fireShot()

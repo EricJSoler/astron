@@ -17,6 +17,7 @@ public class DefaultGun : Gun{
         crossHairSettings.scale.x = 30;
         crossHairSettings.scale.y = 30;
         guiCrossHairTexture = crossHairSettings.eTexture;
+        myGunFireControl = new SingleShotFireControl(this);
     }
 
     // Update is called once per frame
@@ -98,6 +99,11 @@ public class DefaultGun : Gun{
             foreach (MeshRenderer element in meshes) 
                 element.enabled = false;
         }
+    }
+
+    public override GunFireControl getControls()
+    {
+        return myGunFireControl;
     }
 
     void OnGUI()
