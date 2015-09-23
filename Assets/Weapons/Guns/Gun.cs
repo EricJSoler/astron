@@ -19,25 +19,40 @@ public abstract class Gun : MonoBehaviour {
     protected bool active;
 
     protected int gunRange;
-	
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
 
-	}
+
+	protected GunFireControl myGunFireControl;
+
 	
     //Use crosshair settings and some sort of raycast
     //to see if a player is infront of the gun
 	public abstract void fireShot();
 	public abstract void aim();
+	public abstract GunFireControl getControls();
     //Give a gun a reference to a player this will mean it is owned
     //this is only ran if photonview is mine
 	public abstract void setOwned(bool switchbool, Player player);
     public abstract void setActive(bool switchActivation);
+
+    protected virtual void doDamage(float amount, Player target)
+    {
+        target.photonView.RPC("recieveDamage", PhotonTargets.All, amount);
+    }
+    protected virtual void doDamage(float amount, AIEnemy target)
+    {
+        target.photonView.RPC("recieveDamage", PhotonTargets.All, amount);
+    }
+
+    protected virtual void getKillCredit(Player shooter, AIEnemy shot)
+    {
+        shot.requestXPOnDeath(shooter);
+    }
+
+    protected virtual void getKillCredit(Player shooter, Player shot)
+    {
+        shot.requestXPOnDeath(shooter);
+    }
+
 
 
 

@@ -1,29 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+//Requires Enviroment Settings to be in the scene
 public class PlayerPosition : PlayerBase {
 
     [System.Serializable]
     public class MoveSettings
     {
-        public float forwardVel = 12;
-        public float backwardVel = 8;
-        public float strafeVel = 3;
         public float rotateVel = 100;
-        public float jumpVel = 25;
         public float distToGrounded = .3f;
         public LayerMask ground;
     }
-
-    [System.Serializable]
-    public class PhysSettings
-    {
-        public float downAccel = .75f;
-    }
-
-
     public MoveSettings moveSetting = new MoveSettings();
-    public PhysSettings physSetting = new PhysSettings();
 
     //Local Movement variables
     Vector3 velocity = Vector3.zero;
@@ -79,23 +68,6 @@ public class PlayerPosition : PlayerBase {
 
     }
 
-    void UpdateNetworkedPosition()
-    {
-        //Doesnt work at all
-        float pingInSeconds = (float)PhotonNetwork.GetPing() * .001f;
-        float timeSinceLastUpdate = (float)(PhotonNetwork.time - m_LastNetworkDataRecievedTime);
-        float totalTimePassed = pingInSeconds + timeSinceLastUpdate;
-        Vector3 exterpolatedTargetPosition = correctPlayerPos + transform.forward * moveSetting.forwardVel * totalTimePassed;
-
-        Vector3 newPosition = Vector3.MoveTowards(transform.position, exterpolatedTargetPosition, moveSetting.forwardVel * Time.deltaTime);
-        if (Vector3.Distance(transform.position, exterpolatedTargetPosition) > 2f) {
-            correctPlayerPos = exterpolatedTargetPosition;
-        }
-
-        correctPlayerPos.y = Mathf.Clamp(correctPlayerPos.y, 0.5f, 50f);
-        transform.position = correctPlayerPos;
-    
-    }
     void UpdateNetworkedRotation()
     {
         transform.rotation = Quaternion.RotateTowards(transform.rotation, correctPlayerRot, 180f * Time.deltaTime);
@@ -135,18 +107,33 @@ public class PlayerPosition : PlayerBase {
             //rBody.velocity = transform.forward * forwardInput * moveSetting.forwardVel;
         //}
         if (forwardInput > inputDelay) {
-            velocity.z = moveSetting.forwardVel * forwardInput;
+            velocity.z = sCharacterClass.movementSpeed * forwardInput;
         }
         else if (forwardInput < inputDelay * -1) {
-            velocity.z = moveSetting.backwardVel * forwardInput;
+            velocity.z = getBackwardVel() * forwardInput;
         }
         else
             velocity.z = 0;// rBody.velocity = Vector3.zero;// zero velocity
         if (Mathf.Abs(strafeInput) > inputDelay) {
-            velocity.x = moveSetting.strafeVel * strafeInput;
+            velocity.x = getStrafeVel() * strafeInput;
         }
         else
             velocity.x = 0;
+    }
+
+    float getForwardVel()
+    {
+        return sCharacterClass.movementSpeed * EnviromentSettings.enviroment.movementSpeedSlow;
+    }
+
+    float getStrafeVel()
+    {
+        return (sCharacterClass.movementSpeed * .5f) * EnviromentSettings.enviroment.movementSpeedSlow;//Move side to side 50% as fast as forward
+    }
+
+    float getBackwardVel()
+    {
+        return (sCharacterClass.movementSpeed * .8f) * EnviromentSettings.enviroment.movementSpeedSlow;//move backwards 80% as fast as forward
     }
 
     void Turn()
@@ -161,12 +148,12 @@ public class PlayerPosition : PlayerBase {
     void Jump()
     {
         if (jumpInput > 0 && Grounded()) {
-            velocity.y = moveSetting.jumpVel;
+            velocity.y = sCharacterClass.jumpPower;
         }
         else if (jumpInput == 0 && Grounded())
             velocity.y = 0;
         else
-            velocity.y -= physSetting.downAccel;
+            velocity.y -= EnviromentSettings.enviroment.downAccel;
     }
 
     bool Grounded()

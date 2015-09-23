@@ -17,6 +17,7 @@ public class DefaultGun : Gun{
         crossHairSettings.scale.x = 30;
         crossHairSettings.scale.y = 30;
         guiCrossHairTexture = crossHairSettings.eTexture;
+        myGunFireControl = new SingleShotFireControl(this);
     }
 
     // Update is called once per frame
@@ -60,16 +61,16 @@ public class DefaultGun : Gun{
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, gunRange)) {
                 if (hit.collider.gameObject.tag == "Player") {
-                    hit.collider.gameObject.GetComponent<Player>().photonView.RPC("recieveDamage", PhotonTargets.All, 25f);
-                  
+                    Player enemy = hit.collider.gameObject.GetComponent<Player>();
+                    getKillCredit(ownedPlayer, enemy);
+                    float damage = (20 * ownedPlayer.sCharacterClass.attackDamage);
+                    doDamage(damage, enemy);
                 }
                 else if (hit.collider.gameObject.tag == "Enemy") {
-
-                    MeleeEnemy enemy = hit.collider.gameObject.GetComponent<MeleeEnemy>();
-                    enemy.iShotYou(ownedPlayer);
-                    float damage = (float)(25 * ownedPlayer.sCharacterClass.attackDamage);
-                    enemy.photonView.RPC("recieveDamage", PhotonTargets.All, damage);
-                   
+                    AIEnemy enemy = hit.collider.gameObject.GetComponent<AIEnemy>();
+                    getKillCredit(ownedPlayer, enemy);
+                    float damage = (20 * ownedPlayer.sCharacterClass.attackDamage);
+                    doDamage(damage, enemy);
                 }
 
             }
@@ -98,6 +99,11 @@ public class DefaultGun : Gun{
             foreach (MeshRenderer element in meshes) 
                 element.enabled = false;
         }
+    }
+
+    public override GunFireControl getControls()
+    {
+        return myGunFireControl;
     }
 
     void OnGUI()
