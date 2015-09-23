@@ -74,4 +74,15 @@ public class PlayerInventory : PlayerBase {
             getCurrentWeapon().GetComponent<Gun>().fireShot();
         }
     }
+
+	public void listenCurrentGunControl()
+	{
+		guns [currentWeoponIndex].GetComponent<Gun> ().getControls ().gunControl();
+
+	}
+
+
+
+
+
 }

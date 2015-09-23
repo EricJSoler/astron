@@ -30,7 +30,6 @@ public class PlayerController : PlayerBase
 
     //float weaponInput;
 
-
     void Start()
     {
         m_controlsOn = true;
@@ -49,16 +48,20 @@ public class PlayerController : PlayerBase
 
     void getInventoryInput()
     {
-        if (Input.GetKeyDown(KeyCode.E)) {
-            if (photonView.isMine)
-                PlayerInventory.photonView.RPC("switchGun", PhotonTargets.All);
-                //PlayerInventory.switchGun();
-        }
+		if (Input.GetKeyDown (KeyCode.E)) {
+			if (photonView.isMine)
+			{
+				PlayerInventory.photonView.RPC ("switchGun", PhotonTargets.All);
+			}
+		}
 
-        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.T)) {
+		//original method
+		// if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.T)) {
+			
+		//   PlayerInventory.getCurrentWeapon().GetComponent<Gun>().fireShot();
+		// }
 
-            PlayerInventory.getCurrentWeapon().GetComponent<Gun>().fireShot();
-        }
+		PlayerInventory.listenCurrentGunControl();
 
     }
 
