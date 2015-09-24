@@ -52,15 +52,12 @@ public class PlayerController : PlayerBase
 		if (Input.GetKeyDown (KeyCode.E)) {
 			if (photonView.isMine)
 			{
-				PlayerInventory.photonView.RPC ("switchGun", PhotonTargets.All);
+				PlayerInventory.photonView.RPC ("switchGun", PhotonTargets.All);//These prolly need to be buffered
 			}
 		}
-
-		//original method
-		// if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.T)) {
-			
-		//   PlayerInventory.getCurrentWeapon().GetComponent<Gun>().fireShot();
-		// }
+        if (Input.GetKeyDown(KeyCode.R)) {
+            PlayerInventory.photonView.RPC("reloadWeapon", PhotonTargets.All);//These prolly need to be buffered
+        }
 
 		PlayerInventory.listenCurrentGunControl();
 
@@ -97,7 +94,7 @@ public class PlayerController : PlayerBase
 
                 if (Input.GetKeyDown(KeyCode.F)) {
 //                    Debug.Log("GOT KEY F");
-                    PlayerInventory.photonView.RPC("attachGun", PhotonTargets.All, collisionWeapon.GunID);
+                    PlayerInventory.photonView.RPC("attachGun", PhotonTargets.AllBuffered, collisionWeapon.GunID);
                 }
             }
             else

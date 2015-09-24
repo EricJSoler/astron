@@ -10,7 +10,6 @@ public class LeviathanLoadedClip : WeapStateLoadedClip {
 
     public override void shoot()
     {
-        Debug.Log("shooting");
 
         Ray ray = myWeapon.OwnedPlayer.CameraController.Camera.ScreenPointToRay(
                 new Vector3(myWeapon.crossHairSettings.location.x, myWeapon.crossHairSettings.location.y));
@@ -30,15 +29,15 @@ public class LeviathanLoadedClip : WeapStateLoadedClip {
 
         }
         Debug.DrawRay(ray.origin, ray.direction * 1000, Color.red, 20f);
+        myWeapon.Visuals.muzzleFlash();
+        myWeapon.weaponStats.clipAmmo -= 1;
+        if (myWeapon.weaponStats.clipAmmo == 0) {
+            myWeapon.switchToEmptyClipState();
+        }
     }
 
     public override void aim()
     {
-        //Vector3 start = new Vector3( myWeapon.crossHairSettings.location.x, myWeapon.crossHairSettings.location.y
-        //    );
-        //Vector3 direction 
-       
-        Debug.Log("aiming");
         Ray ray = myWeapon.OwnedPlayer.CameraController.Camera.ScreenPointToRay(
                 new Vector3(myWeapon.crossHairSettings.location.x, myWeapon.crossHairSettings.location.y));
         RaycastHit hit;

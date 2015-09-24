@@ -13,8 +13,7 @@ public class PlayerInventory : PlayerBase {
     public GameObject[] guns;
 	int currentWeoponIndex = 0;
 	// Use this for initialization
-	void Start () {
-		loadOwnedWeapons ();
+	void Start (){
 	}
 
 	public void loadOwnedWeapons()
@@ -65,13 +64,6 @@ public class PlayerInventory : PlayerBase {
 
 	}
 
-    public void recieveInput(float fireInput)
-    {
-        if (fireInput > .5f) {
-            
-        }
-    }
-
 	public void listenCurrentGunControl()
 	{
         if (weapons.Count > 0) {
@@ -79,6 +71,13 @@ public class PlayerInventory : PlayerBase {
         }
 	}
 
+    [PunRPC]
+    public void reloadWeapon()
+    {
+        if (weapons.Count > 0) {
+            weapons[activeWeaponIndex].reload();
+        }
+    }
 
 
 

@@ -16,6 +16,6 @@ public class LeviathanInInventory : WeapStateInInventory {
     public override void switchTo()//Turn Stuff On Here
     {
         myWeapon.Visuals.turnOnRenderers();
-        myWeapon.switchToOnPlayer();
+        
     }
 }

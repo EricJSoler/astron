@@ -9,6 +9,15 @@ public class LeviathanEmptyClip : WeapStateEmptyClip {
     }
     public override void reload()
     {
+        int ammoNeededForFullClip = myWeapon.weaponStats.clipSize - myWeapon.weaponStats.clipAmmo;
+        if (ammoNeededForFullClip <= myWeapon.weaponStats.currentAmmo) {
+            myWeapon.weaponStats.currentAmmo -= ammoNeededForFullClip;
+            myWeapon.weaponStats.clipAmmo = myWeapon.weaponStats.clipSize;
+        }
+        else {
+            myWeapon.weaponStats.clipAmmo = myWeapon.weaponStats.currentAmmo;
+            myWeapon.weaponStats.currentAmmo = 0;
+        }
         myWeapon.switchToReloadState();
     }
     public override void aim()

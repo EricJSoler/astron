@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+public delegate void weaponDelegate();
 public abstract class WeaponI : WeaponBase {
     [System.Serializable]
     public class CrossHairSettings
@@ -60,15 +62,10 @@ public abstract class WeaponI : WeaponBase {
     {
         get
         {
-            if (m_ownedPlayer == null)
-                Debug.Log("you got a bug trying to grab the player owning a gun");
             return m_ownedPlayer;
         }
     }
-    public abstract void recieveInput(float input);
-    public abstract void dropWeapon();
-    public abstract void attachWeapon(Player attachTo, bool asActive);
-    public abstract void listenForInput();
+
 
     protected string m_gunId;
     public string GunID
@@ -78,7 +75,7 @@ public abstract class WeaponI : WeaponBase {
             return m_gunId;
         }
     }
-    
+    //Functions For Changing State
     public virtual void switchToReloadState()
     {
         m_currentState = m_ReloadingState;
@@ -94,14 +91,20 @@ public abstract class WeaponI : WeaponBase {
         m_currentState = m_NotOnPlayer;
     }
 
-    public virtual void switchToOnPlayer()
+    public virtual void switchToEmptyClipState()
     {
-        if (weaponStats.clipAmmo > 0) 
-            m_currentState = m_LoadedClipState;
-        else
-            m_currentState = m_EmptyClipState;
+        m_currentState = m_EmptyClipState;
     }
 
+    public virtual void switchToLoadedClipState()
+    {
+        m_currentState = m_LoadedClipState;
+    }
+    /// /////////////////
+    ///InputHandling
+    public abstract void recieveInput(float input);
+    public abstract void listenForInput();
+    ////////Actions
     public virtual void doDamage(Player target)
     {
         float amount = 0;
@@ -122,4 +125,16 @@ public abstract class WeaponI : WeaponBase {
     {
         shot.requestXPOnDeath(OwnedPlayer);
     }
-}
+
+    public virtual void reload()
+    {
+        m_currentState = m_ReloadingState;
+    }
+
+
+    
+    public abstract void dropWeapon();
+    public abstract void attachWeapon(Player attachTo, bool asActive);
+    
+
+    }

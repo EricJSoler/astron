@@ -1,46 +1,46 @@
-﻿//using UnityEngine;
-//using System.Collections;
+﻿using UnityEngine;
+using System.Collections;
 
-//public class MachineGunFireControl : GunFireControl {
+public class MachineGunFireControl : GunFireControl
+{
 
-//    bool isFiring;
-//    private float nextFire = 0.0f;
-//    private float fireRate;
-	
-//    public MachineGunFireControl(float inSpeed, Gun myGun)
-//    {
-//        fireRate = inSpeed;
-//        myCurrentGun = myGun;
-//    }
+    bool isFiring;
+    private float nextFire = 0.0f;
+    private float fireRate;
 
-//    public override void gunControl()
-//    {
-//        if (Input.GetMouseButtonDown (0)) {
+    public MachineGunFireControl(float inSpeed, WeaponI myGun)
+    {
+        fireRate = inSpeed;
+        myCurrentGun = myGun;
+    }
 
-//            isFiring = true;
-//        }
+    public override void gunControl()
+    {
+        if (Input.GetMouseButtonDown(0)) {
 
-//        if (Input.GetMouseButtonUp (0)) {
-			
-//            isFiring = false;
-//        }
+            isFiring = true;
+        }
 
-//        if (isFiring) {
-			
-//            if(Time.time > nextFire)
-//            {
-				
-//                nextFire = Time.time + fireRate;
-//                myCurrentGun.fireShot();
-//            }
-			
-//        }
+        if (Input.GetMouseButtonUp(0)) {
 
-//    }
+            isFiring = false;
+        }
 
+        if (isFiring) {
 
+            if (Time.time > nextFire) {
+
+                nextFire = Time.time + fireRate;
+                myCurrentGun.currentState.shoot();
+            }
+
+        }
+
+    }
 
 
 
 
-//}
+
+
+}

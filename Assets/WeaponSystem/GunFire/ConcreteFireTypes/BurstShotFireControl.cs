@@ -1,38 +1,37 @@
-﻿//using UnityEngine;
-//using System.Collections;
+﻿using UnityEngine;
+using System.Collections;
 
-//public class BurstShotFireControl : GunFireControl {
-
-
-//    private int burstRate;
-//    private float burstSpeed;
-//    private float nextFire = 0.0f;
+public class BurstShotFireControl : GunFireControl
+{
 
 
-//    public BurstShotFireControl(int inRate, float inSpeed, Gun myGun)
-//    {
-//        burstRate = inRate;
-//        myCurrentGun = myGun;
-//        burstSpeed = inSpeed;
-//    }
+    private int burstRate;
+    private float burstSpeed;
+    private float nextFire = 0.0f;
 
-	
-//    public override void gunControl()
-//    {
-	
-//        if (Input.GetMouseButtonDown (0)) {
 
-//            for(int i = 0; i < burstRate; i++)
-//            {
-//                if(Time.time > nextFire)
-//                {
-					
-//                    nextFire = Time.time + burstSpeed;
-//                    myCurrentGun.fireShot();
-//                }
-//            }
-			
-//        }
-//    }
-	
-//}
+    public BurstShotFireControl(int inRate, float inSpeed, WeaponI myGun)
+    {
+        burstRate = inRate;
+        myCurrentGun = myGun;
+        burstSpeed = inSpeed;
+    }
+
+
+    public override void gunControl()
+    {
+
+        if (Input.GetMouseButtonDown(0)) {
+
+            for (int i = 0; i < burstRate; i++) {
+                if (Time.time > nextFire) {
+
+                    nextFire = Time.time + burstSpeed;
+                    myCurrentGun.currentState.shoot();
+                }
+            }
+
+        }
+    }
+
+}
