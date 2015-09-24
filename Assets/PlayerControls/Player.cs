@@ -12,7 +12,8 @@ public class Player : PlayerBase
 
     void Start()
     {
-        pauseMenuInScene = FindObjectOfType<PauseMenu>();
+        if(photonView.isMine)
+            pauseMenuInScene = FindObjectOfType<PauseMenu>();
         myXpTimer = new XpTimer();
     }
 
@@ -29,7 +30,7 @@ public class Player : PlayerBase
             if (sCharacterClass.currentHealth <= 0) {
                 Debug.Log("your dead");
                 PhotonNetwork.Instantiate("CartoonExplosion", this.transform.position, transform.rotation, 0);
-                photonView.RPC("destroyThisPlayer", PhotonTargets.AllBuffered);
+                photonView.RPC("destroyThisPlayer", PhotonTargets.AllBuffered, sCharacterClass.level);
             }
         }
     }
@@ -53,9 +54,11 @@ public class Player : PlayerBase
         }
     }
 
+    //The the PHOTONVIEW WHO OWNS THE PLAYER SHOULD BE THE ONLY ONE CALLING THIS RPC
     [PunRPC]
-    public void destroyThisPlayer()
+    public void destroyThisPlayer(int myLevel)
     {
+        myXpTimer.iDied(myLevel, Time.time);
         if (photonView.isMine) {
             Debug.Log("your dead");
             //Post to the screen taht you died probably do this  a cooler way later
@@ -64,9 +67,8 @@ public class Player : PlayerBase
             this.recieveInput(1);
         }
         else if (!photonView.isMine) {
-            Destroy(gameObject);
+            gameObject.SetActive(false);//(gameObject);
         }
-        myXpTimer.iDied(sCharacterClass.level, Time.time);
     }
 
     public void requestXPOnDeath(Player shotMe)

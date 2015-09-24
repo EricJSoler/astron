@@ -7,7 +7,7 @@ public class AIStats : AIBase {
     public BaseAICharacterClass sCharacterStats;
     public string typeOfAiStats;
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         switch (typeOfAiStats) {
             case "MeleeEnemy":
                 sCharacterStats = new AICharacterMelee();
@@ -43,5 +43,13 @@ public class AIStats : AIBase {
     public void loseHealth(float amount)
     {
         sCharacterStats.loseHealth(amount);
+    }
+
+    public float movementSpeed
+    {
+        get
+        {
+            return sCharacterStats.movementSpeed;
+        }
     }
 }

@@ -16,6 +16,7 @@ public class AIChaser : AINavigation {
             if (target) {
                 agent = GetComponent<NavMeshAgent>();
                 myBody = GetComponent<Rigidbody>();
+                agent.speed = aiStats.movementSpeed;
             }
         }
 	}

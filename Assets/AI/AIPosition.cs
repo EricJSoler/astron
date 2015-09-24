@@ -44,14 +44,14 @@ public class AIPosition : AIBase {
             // We own this player: send the others our data
             stream.SendNext(transform.position);
             stream.SendNext(transform.rotation);
-            stream.SendNext(rBody.velocity);
+//            stream.SendNext(rBody.velocity);
 
         }
         else if (stream.isReading) {
             // Network player, receive data
             this.correctPlayerPos = (Vector3)stream.ReceiveNext();
             this.correctPlayerRot = (Quaternion)stream.ReceiveNext();
-            this.lastRecievedVelocity = (Vector3)stream.ReceiveNext();
+//            this.lastRecievedVelocity = (Vector3)stream.ReceiveNext();
             m_LastNetworkDataRecievedTime = info.timestamp;
 
         }

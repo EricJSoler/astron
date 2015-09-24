@@ -11,6 +11,7 @@ public class AICharacterMelee : BaseAICharacterClass
         //this might be a bug if i dont own the player
         m_stats.maxHealth = m_stats.currentHealth = 50 * m_stats.level;
         m_stats.attackDamage = m_stats.level * 1;
+        m_stats.movementSpeed = m_stats.level * 1;
     }
 
     public override void loseHealth(float amount)
@@ -36,5 +37,6 @@ public class AICharacterMelee : BaseAICharacterClass
     {
         m_stats.maxHealth = m_stats.currentHealth = 50 * m_stats.level;
         m_stats.attackDamage = m_stats.level * 1;
+        m_stats.movementSpeed = m_stats.level * 1;
     }
 }

@@ -18,6 +18,7 @@ public class DefaultGun : Gun{
         crossHairSettings.scale.y = 30;
         guiCrossHairTexture = crossHairSettings.eTexture;
         myGunFireControl = new SingleShotFireControl(this);
+		muzzleFlash = GetComponentInChildren<ParticleSystem> ();
     }
 
     // Update is called once per frame
@@ -45,9 +46,11 @@ public class DefaultGun : Gun{
                 }
             }
             else {
-                guiCrossHairTexture = crossHairSettings.fTexture;
+				guiCrossHairTexture = crossHairSettings.eTexture;
 
             }
+
+
         }
 
 
@@ -74,6 +77,8 @@ public class DefaultGun : Gun{
                 }
 
             }
+
+			muzzleFlash.Play ();
 
         }
 
