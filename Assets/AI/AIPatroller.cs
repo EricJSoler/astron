@@ -53,47 +53,54 @@ public class AIPatroller : AINavigation {
 
     void findPlayers()
     {
-        playerTransforms = new List<Transform>();
-        GameObject[] playersObj = GameObject.FindGameObjectsWithTag("Player");
-        foreach (GameObject element in playersObj) {
-            playerTransforms.Add(element.transform);
+        if (photonView.isMine) {
+            playerTransforms = new List<Transform>();
+            GameObject[] playersObj = GameObject.FindGameObjectsWithTag("Player");
+            foreach (GameObject element in playersObj) {
+                playerTransforms.Add(element.transform);
+            }
         }
     }
 
     void lookForPlayers()
     {
-        foreach(Transform element in playerTransforms)
-        {
+        if (photonView.isMine) {
+            foreach (Transform element in playerTransforms) {
 
-            if (Vector3.Distance(element.position, gameObject.transform.position) < visionDistance) {
-                chasing = true;
-                chaseTarget = element;
-                break;
+                if (Vector3.Distance(element.position, gameObject.transform.position) < visionDistance) {
+                    chasing = true;
+                    chaseTarget = element;
+                    break;
+                }
             }
         }
-        
        
        
     }
     public void addWayPointToPatrol(Transform wayPoint)
     {
-        if (wayPoint == null)
-            Debug.Log("transform didnt show up");
-        if (wayPoints == null)
-            wayPoints = new List<Transform>();
-        if(wayPoints!= null)
-            wayPoints.Add(wayPoint);
-
+        if (photonView.isMine) {
+            if (wayPoint == null)
+                Debug.Log("transform didnt show up");
+            if (wayPoints == null)
+                wayPoints = new List<Transform>();
+            if (wayPoints != null)
+                wayPoints.Add(wayPoint);
+        }
     }
 
     public void startPatrol()
     {
-        repath();
+        if (photonView.isMine) {
+            repath();
+        }
     }
 
     void repath()
     {
-        currentWayPoint = (currentWayPoint + 1) % wayPoints.Count;
-        myAgent.SetDestination(wayPoints[currentWayPoint].position);
+        if (photonView.isMine) {
+            currentWayPoint = (currentWayPoint + 1) % wayPoints.Count;
+            myAgent.SetDestination(wayPoints[currentWayPoint].position);
+        }
     }
 }

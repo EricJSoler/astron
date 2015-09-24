@@ -17,7 +17,7 @@ public class PortalGun : Gun {
         crossHairSettings.scale.x = 100;
         crossHairSettings.scale.y = 100;
         guiCrossHairTexture = crossHairSettings.eTexture;
-        myGunFireControl = new MachineGunFireControl(0.5f, this);
+        myGunFireControl = new MachineGunFireControl(0.2f, this);
 		//myGunFireControl = new BurstShotFireControl (3, 0.6f, this);
 		muzzleFlash = GetComponentInChildren<ParticleSystem> ();
     }

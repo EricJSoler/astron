@@ -18,7 +18,7 @@ public static class ExperienceDistributor
         int experienceGained;
 
         if (killerLev < killedLevel) {
-            experienceGained = killedLevel - killerLev * 10 + 50;
+            experienceGained = (killedLevel - killerLev) * 10 + 50;
         }
         else if (killerLev > killedLevel)
             experienceGained = (int)(50 - (10 * (killerLev - killedLevel)));
@@ -80,7 +80,6 @@ public class XpTimer
 
     public void iDied(int level, float timeOfDeath)
     {
-        Debug.Log("this is working");
         foreach (TimerContainer element in myList) {
             if (timeForKill >= timeOfDeath - element.time) {
                 if (element.player != null)
