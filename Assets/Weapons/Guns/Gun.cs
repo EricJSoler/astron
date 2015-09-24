@@ -12,6 +12,8 @@ public abstract class Gun : MonoBehaviour {
         public Vector2 scale = Vector2.zero;
     }
 
+	protected ParticleSystem muzzleFlash;
+
     public CrossHairSettings crossHairSettings = new CrossHairSettings();
     protected Player ownedPlayer;
 	public new string name;
@@ -22,17 +24,24 @@ public abstract class Gun : MonoBehaviour {
 
 
 	protected GunFireControl myGunFireControl;
-
+	public abstract GunFireControl getControls();
 	
     //Use crosshair settings and some sort of raycast
     //to see if a player is infront of the gun
 	public abstract void fireShot();
 	public abstract void aim();
-	public abstract GunFireControl getControls();
+
     //Give a gun a reference to a player this will mean it is owned
     //this is only ran if photonview is mine
 	public abstract void setOwned(bool switchbool, Player player);
     public abstract void setActive(bool switchActivation);
+
+
+
+
+
+
+
 
     protected virtual void doDamage(float amount, Player target)
     {
