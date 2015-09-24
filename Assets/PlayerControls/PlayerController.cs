@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerController : PlayerBase
 {
-
+    WeaponI collisionWeapon;
 
     [System.Serializable]
     public class InputSettings
@@ -40,6 +40,7 @@ public class PlayerController : PlayerBase
         if (m_controlsOn) {
             getMovementInput();
             getInventoryInput();
+            getPickUpWeaponInput();
         }
         getChatInput();
         pauseMenuInput();
@@ -88,6 +89,22 @@ public class PlayerController : PlayerBase
         CameraController.receieveInput(vOrbitInput);
     }
 
+    void getPickUpWeaponInput()
+    {
+        if (collisionWeapon != null) {
+            if (Vector3.Distance(collisionWeapon.transform.position, gameObject.transform.position) <= 3) {
+
+
+                if (Input.GetKeyDown(KeyCode.F)) {
+//                    Debug.Log("GOT KEY F");
+                    PlayerInventory.photonView.RPC("attachGun", PhotonTargets.All, collisionWeapon.GunID);
+                }
+            }
+            else
+                collisionWeapon = null;
+        }
+    }
+
 
 
     bool m_controlsOn;
@@ -95,5 +112,11 @@ public class PlayerController : PlayerBase
     {
         get { return m_controlsOn; }
         set { m_controlsOn = value; }
+    }
+
+    public void notifyPlayerOfPickUpAbleWeapon(WeaponI weapon)
+    {
+//        Debug.Log("NOTIFIED of collision with weapon");
+        collisionWeapon = weapon;
     }
 }

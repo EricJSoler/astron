@@ -6,7 +6,8 @@ public class CombatInitialize : MonoBehaviour {
 
     public Vector3 playerSpawnLocation = Vector3.zero;
 	GameObject[] spawnLocations;
-
+    public Vector3 masterClientWeaponSpawn;
+    public Vector3 nonMasterClientWeaponSpawn;
 
     public Quaternion playerRotation = Quaternion.identity;
 	bool doOnce;
@@ -37,12 +38,14 @@ public class CombatInitialize : MonoBehaviour {
     {
         GameObject player;
 		if (PhotonNetwork.isMasterClient) {
-            player = PhotonNetwork.Instantiate("Kristoph", spawnLocations[0].transform.position, playerRotation, 0) as UnityEngine.GameObject;
-		}
+            player = PhotonNetwork.Instantiate("Kristoph1", spawnLocations[0].transform.position, playerRotation, 0) as UnityEngine.GameObject;
+            PhotonNetwork.Instantiate("Leviathan", masterClientWeaponSpawn, Quaternion.identity, 0);
+        }
 		else
 		{
-	        player = PhotonNetwork.Instantiate("Kristoph", spawnLocations[0].transform.position, playerRotation, 0) as UnityEngine.GameObject;
-		}
+	        player = PhotonNetwork.Instantiate("Kristoph1", spawnLocations[0].transform.position, playerRotation, 0) as UnityEngine.GameObject;
+            PhotonNetwork.Instantiate("Leviathan", nonMasterClientWeaponSpawn, Quaternion.identity, 0);
+        }
 
         GameObject playerCameraObj = (GameObject)Instantiate(cameraPrefab, Vector3.zero, Quaternion.identity);
         CameraController camera = playerCameraObj.GetComponent<CameraController>();

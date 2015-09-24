@@ -1,9 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerInventory : PlayerBase {
 
-	public GameObject[] guns;
+    List<WeaponI> weapons = new List<WeaponI>();
+    int activeWeaponIndex = 0;
+    /// <summary>
+    /// 
+    /// </summary>
+    
+    public GameObject[] guns;
 	int currentWeoponIndex = 0;
 	// Use this for initialization
 	void Start () {
@@ -12,17 +19,7 @@ public class PlayerInventory : PlayerBase {
 
 	public void loadOwnedWeapons()
 	{
-		for (int i = 0; i < guns.Length; i++) {
-            if (photonView.isMine) {
-                guns[i].GetComponent<Gun>().setActive(true);
-                guns[i].GetComponent<Gun>().setOwned(true, this.player);
-            }
-			if(guns[i].GetComponent<Gun>().name != "DefaultGun")
-			{
-				guns[i].GetComponent<Gun>().setActive(false);
-                guns[i].GetComponent<Gun>().setOwned(true, this.player);
-			}
-		}
+
 
 	}
 
@@ -30,15 +27,23 @@ public class PlayerInventory : PlayerBase {
 
 	}
 
-
+    [PunRPC]
+    public void attachGun(string id) ///EH i need a good algo for this or something but i dont wanna write it right now
+    {
+        WeaponI[] allWeapons = GameObject.FindObjectsOfType<WeaponI>();
+        foreach (WeaponI element in allWeapons) {
+            if (element.GunID == id) {
+                //Debug.Log("Found a match");
+                element.attachWeapon(player, true);//change this bool to just add it to inventory
+                weapons.Add(element);
+                break;
+            }
+        }
+    }
 	[PunRPC]
 	public void switchGun()
 	{
-		currentWeoponIndex++;
-		currentWeoponIndex %= guns.Length;
-        string nameToSend = guns[currentWeoponIndex].GetComponent<Gun>().name;
-		photonView.RPC("setGun",PhotonTargets.All,nameToSend);
-        //this.setGun(nameToSend);
+
     }
 
 
@@ -57,28 +62,21 @@ public class PlayerInventory : PlayerBase {
 	[PunRPC]
 	public void setGun(string gunName)
 	{
-		for (int i = 0; i < guns.Length; i++) {
-			if(guns[i].GetComponent<Gun>().name != gunName)
-			{
-				guns[i].GetComponent<Gun>().setActive(false);
-			}
-			else{
-				guns[i].GetComponent<Gun>().setActive(true);
-			}
-		}
+
 	}
 
     public void recieveInput(float fireInput)
     {
         if (fireInput > .5f) {
-            getCurrentWeapon().GetComponent<Gun>().fireShot();
+            
         }
     }
 
 	public void listenCurrentGunControl()
 	{
-		guns [currentWeoponIndex].GetComponent<Gun> ().getControls ().gunControl();
-
+        if (weapons.Count > 0) {
+            weapons[activeWeaponIndex].listenForInput();
+        }
 	}
 
 

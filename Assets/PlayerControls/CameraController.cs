@@ -8,12 +8,12 @@ using System.Collections;
 public class CameraController : MonoBehaviour
 {
 
-    [System.Serializable]
+    //[System.Serializable]
     public class PositionSettings
     {
-        public Vector3 targetPosOffSet = new Vector3(0, 3.4f, 0);
+        public Vector3 targetPosOffSet = new Vector3(0, 2f, 0);
         public float lookSmooth = 100f;
-        public float distanceFromTarget = -6;
+        public float distanceFromTarget = -2;
         public float zoomSmooth = 100;
         public float maxZoom = -2;
         public float minZoom = -15;
