@@ -3,6 +3,7 @@ using System.Collections;
 
 public class KyleInstantiator : MonoBehaviour {
 
+    public int level;
 	// Use this for initialization
     int count = 0;
 	void Start () {
@@ -30,7 +31,8 @@ public class KyleInstantiator : MonoBehaviour {
 
     IEnumerator performInstantiate()
     {
-        PhotonNetwork.Instantiate("Cylinder", gameObject.transform.position, Quaternion.identity, 0);
+        GameObject lastCylinder = PhotonNetwork.Instantiate("Cylinder", gameObject.transform.position, Quaternion.identity, 0);
+        lastCylinder.GetComponent<AIStats>().level = level;
         yield return new WaitForSeconds(5);
         startInstantiatingOnNetwork();
         count++;
