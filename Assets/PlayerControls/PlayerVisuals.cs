@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerVisuals : PlayerBase {
 
+
+
 	// Use this for initialization
 	void Start () {
 	
@@ -11,5 +13,11 @@ public class PlayerVisuals : PlayerBase {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void OnGui()
+	{
+
+
 	}
 }

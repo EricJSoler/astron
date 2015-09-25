@@ -52,6 +52,32 @@ public abstract class BaseCharacterClass
         get { return m_stats.requiredExperience; }
     }
 
+
+
+
+
+	public virtual void increaseAttackDamage(int inDamage)
+	{
+		m_stats.attackDamage += inDamage;
+	}
+	
+	public virtual void increaseMoveSpeed(int inMove)
+	{
+		m_stats.movementSpeed += inMove;
+	}
+	
+	public virtual void increaseJump(int inJump)
+	{
+		m_stats.jumpPower += inJump;
+	}
+	
+	public virtual void increaseElectronics(int inElectronics)
+	{
+		m_stats.electronics += inElectronics;
+	}
+
+
+
    // public void notifyOfLevelChangeForNonLocalPlayer();
 }
 

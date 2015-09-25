@@ -113,6 +113,17 @@ public class PlayerBase : Photon.MonoBehaviour
             return m_playerVisuals;
         }
     }
+
+	PlayerHUD m_playerHUD;
+	public PlayerHUD HUD
+	{
+		get{
+			if(m_playerHUD == null)
+				m_playerHUD = GetComponent<PlayerHUD>();
+			
+			return m_playerHUD;
+		}
+	}
     
     DataHolder m_dataHolder;
     public DataHolder DataHolder

@@ -14,8 +14,8 @@ public class LeviathanWeapon : WeaponI {
         firingSystem = new SingleShotFireControl(this);
         weaponStats.damage = 0;
         weaponStats.electric = 100;
-        weaponStats.clipSize = 2;
-        weaponStats.clipAmmo = 2;
+        weaponStats.clipSize = 10;
+        weaponStats.clipAmmo = 10;
         weaponStats.maxAmmo = 30;
         weaponStats.currentAmmo = 30;
         weaponStats.reloadTime = 2f;

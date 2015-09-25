@@ -3,10 +3,10 @@ using System.Collections;
 
 
 public class LeviathanVisuals : WeaponVisualsI {
-    public ParticleSystem muzzleFlashParticle;
+    private ParticleSystem muzzleFlashParticle;
 	// Use this for initialization
 	void Start () {
-       
+		muzzleFlashParticle = GetComponentInChildren<ParticleSystem> ();
 	}
 	
 	// Update is called once per frame
