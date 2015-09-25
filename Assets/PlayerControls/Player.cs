@@ -22,6 +22,7 @@ public class Player : PlayerBase
     void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         PlayerPosition.SerializeState(stream, info);
+        Visuals.serializeState(stream, info);
     }
 
     void Update()

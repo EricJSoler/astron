@@ -53,14 +53,8 @@ public class PlayerPosition : PlayerBase {
     {
         if (!photonView.isMine) 
         {
-            //Make prediction of my locatoin and position and update it
             transform.position = Vector3.Lerp(transform.position, this.correctPlayerPos, Time.deltaTime * 5);
-            //UpdateNetworkedPosition();
-            //transform.rotation = Quaternion.Lerp(transform.rotation, this.correctPlayerRot, Time.deltaTime * 5);
             UpdateNetworkedRotation();
-            //rBody.velocity = lastRecievedVelocity * Time.deltaTime;
-            Visuals.updateAnimatorRun(lastRecievedVelocity.z);
-           
         }
         else {
             Run();

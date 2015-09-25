@@ -3,11 +3,13 @@ using System.Collections;
 
 public class PlayerVisuals : PlayerBase {
     public GameObject deathExplosion;
-    Animator m_Animator;
+    public Animator m_Animator;
+
+    float lastRecievedTime;
 
 	// Use this for initialization
 	void Start () {
-        m_Animator = GetComponent<Animator>();
+        
 	}
 	
 	// Update is called once per frame
@@ -21,6 +23,18 @@ public class PlayerVisuals : PlayerBase {
 
 	}
 
+    public void serializeState(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.isWriting) {
+            float run = m_Animator.GetFloat("Forward");
+            stream.SendNext(run);
+        }
+        else {
+            float run = (float)stream.ReceiveNext();
+            updateAnimatorRun(run);
+        }
+        
+    }
     public void deathVisuals()
     {
         Instantiate(deathExplosion, this.transform.position, transform.rotation);
@@ -36,6 +50,11 @@ public class PlayerVisuals : PlayerBase {
     public void updateAnimatorRun(float m_ForwardAmount)
     {
         m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
+    }
+
+    void updateAnimatorRun(float m_ForwardAmount, float currentTime)
+    {
+
     }
 
     public void updateAnimatorJump(bool m_IsGrounded)
