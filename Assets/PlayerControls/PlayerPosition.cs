@@ -59,15 +59,21 @@ public class PlayerPosition : PlayerBase {
             //transform.rotation = Quaternion.Lerp(transform.rotation, this.correctPlayerRot, Time.deltaTime * 5);
             UpdateNetworkedRotation();
             //rBody.velocity = lastRecievedVelocity * Time.deltaTime;
+            Visuals.updateAnimatorRun(lastRecievedVelocity.z);
+           
         }
         else {
             Run();
             Jump();
             rBody.velocity = transform.TransformDirection(velocity);
         }
-
+       
     }
 
+    void LateUpdate()
+    {
+        Visuals.updateAnimatorJump(Grounded());
+    }
     void UpdateNetworkedRotation()
     {
         transform.rotation = Quaternion.RotateTowards(transform.rotation, correctPlayerRot, 180f * Time.deltaTime);
@@ -119,6 +125,7 @@ public class PlayerPosition : PlayerBase {
         }
         else
             velocity.x = 0;
+        Visuals.updateAnimatorRun(velocity.z);
     }
 
     float getForwardVel()

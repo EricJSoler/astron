@@ -30,7 +30,7 @@ public class Player : PlayerBase
             PlayerController.GetInput();
             if (sCharacterClass.currentHealth <= 0) {
                 Debug.Log("your dead");
-                PhotonNetwork.Instantiate("CartoonExplosion", this.transform.position, transform.rotation, 0);
+               
                 photonView.RPC("destroyThisPlayer", PhotonTargets.AllBuffered, sCharacterClass.level);
             }
         }
@@ -70,6 +70,7 @@ public class Player : PlayerBase
         else if (!photonView.isMine) {
             gameObject.SetActive(false);//(gameObject);
         }
+        Visuals.deathVisuals();
     }
 
     public void requestXPOnDeath(Player shotMe)

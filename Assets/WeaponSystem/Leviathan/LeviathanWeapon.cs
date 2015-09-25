@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LeviathanWeapon : WeaponI {
     GunFireControl firingSystem;
-    Vector3 positionOnPlayer = new Vector3(.24827f, 1.504395f, .6065161f);
+    Vector3 positionOnPlayer = new Vector3(.23f, 1.2f, .2f);
 	void Start()
     {
         m_LoadedClipState =  new LeviathanLoadedClip(this);

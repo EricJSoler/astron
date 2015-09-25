@@ -38,12 +38,12 @@ public class CombatInitialize : MonoBehaviour {
     {
         GameObject player;
 		if (PhotonNetwork.isMasterClient) {
-            player = PhotonNetwork.Instantiate("Kristoph1", spawnLocations[0].transform.position, playerRotation, 0) as UnityEngine.GameObject;
+            player = PhotonNetwork.Instantiate("Ethan1", spawnLocations[0].transform.position, playerRotation, 0) as UnityEngine.GameObject;
             PhotonNetwork.Instantiate("Leviathan", masterClientWeaponSpawn, Quaternion.identity, 0);
         }
 		else
 		{
-	        player = PhotonNetwork.Instantiate("Kristoph1", spawnLocations[0].transform.position, playerRotation, 0) as UnityEngine.GameObject;
+	        player = PhotonNetwork.Instantiate("Ethan1", spawnLocations[0].transform.position, playerRotation, 0) as UnityEngine.GameObject;
             PhotonNetwork.Instantiate("Leviathan", nonMasterClientWeaponSpawn, Quaternion.identity, 0);
         }
 
