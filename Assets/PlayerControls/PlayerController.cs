@@ -89,16 +89,21 @@ public class PlayerController : PlayerBase
     void getPickUpWeaponInput()
     {
         if (collisionWeapon != null) {
+
             if (Vector3.Distance(collisionWeapon.transform.position, gameObject.transform.position) <= 3) {
-
-
+				HUD.pickUpGunVisual (collisionWeapon);
                 if (Input.GetKeyDown(KeyCode.F)) {
-//                    Debug.Log("GOT KEY F");
                     PlayerInventory.photonView.RPC("attachGun", PhotonTargets.AllBuffered, collisionWeapon.GunID);
+					collisionWeapon = null;
+					HUD.pickUpGunVisual (null);
                 }
             }
             else
+			{
                 collisionWeapon = null;
+				HUD.pickUpGunVisual (null);
+			}
+				
         }
     }
 

@@ -13,5 +13,4 @@ public abstract class WeapStateLoadedClip : WeaponStateI {
 
     public abstract override void switchFrom();
 
-    
 }
