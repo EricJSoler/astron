@@ -7,6 +7,7 @@ using System.Collections;
 // contain methods to manipulate the other components attached to the player
 public class Player : PlayerBase
 {
+    public Transform myShoulder;
     PauseMenu pauseMenuInScene;
     XpTimer myXpTimer;
 

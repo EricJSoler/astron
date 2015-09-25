@@ -11,9 +11,9 @@ public class CameraController : MonoBehaviour
     //[System.Serializable]
     public class PositionSettings
     {
-        public Vector3 targetPosOffSet = new Vector3(0, 2f, 0);
+        public Vector3 targetPosOffSet = new Vector3(0, 1, 0);
         public float lookSmooth = 100f;
-        public float distanceFromTarget = -2;
+        public float distanceFromTarget = -3;
         public float zoomSmooth = 100;
         public float maxZoom = -2;
         public float minZoom = -15;
@@ -44,6 +44,7 @@ public class CameraController : MonoBehaviour
 
 
     //old
+    bool aiming = false;
     public Transform target;
     bool initializedWithPlayer;
     Vector3 targetPos = Vector3.zero;
@@ -73,6 +74,11 @@ public class CameraController : MonoBehaviour
             // getInput();
             orbitTarget();
             zoomInOnTarget();
+            if (aiming) {
+                position.distanceFromTarget = -1.5f;
+            }
+            else
+                position.distanceFromTarget = -3;
         }
 
     }
@@ -141,7 +147,9 @@ public class CameraController : MonoBehaviour
     }
     public void setCameraTarget(GameObject playerObj)
     {
-        target = playerObj.transform;
+        //GEt The Players Shoulder
+        Player thePlayer = playerObj.GetComponent<Player>();
+        target = thePlayer.myShoulder;
         if (target != null) {
             initializedWithPlayer = true;
         }
@@ -149,9 +157,10 @@ public class CameraController : MonoBehaviour
             Debug.LogError("Camera needs a target");
     }
 
-    public void receieveInput(float orbitX)
+    public void receieveInput(float orbitX, bool aim)
     {
         vOrbitInput = orbitX;
+        aiming = aim;
     }
 
     Camera m_Camera;

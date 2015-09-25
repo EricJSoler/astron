@@ -27,6 +27,7 @@ public class PlayerController : PlayerBase
     float strafeInput;
     float vOrbitInput;
     float pauseInput;
+    bool aimInput;
 
     //float weaponInput;
 
@@ -83,7 +84,8 @@ public class PlayerController : PlayerBase
         vOrbitInput = Input.GetAxisRaw(inputSetting.ORBIT_VERTICAL);//interpolated meaning it will return any value from -1 to 1
         jumpInput = Input.GetAxisRaw(inputSetting.JUMP_AXIS);//not interpolated you will get -1 0 or 1
         PlayerPosition.recieveInput(forwardInput, turnInput, jumpInput, strafeInput);
-        CameraController.receieveInput(vOrbitInput);
+        aimInput = Input.GetKey(KeyCode.Mouse1);
+        CameraController.receieveInput(vOrbitInput, aimInput);
     }
 
     void getPickUpWeaponInput()
