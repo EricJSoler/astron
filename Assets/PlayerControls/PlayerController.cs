@@ -19,6 +19,13 @@ public class PlayerController : PlayerBase
         public string ACTIVE_WEAPONINPUT = "Weapon Input";
     }
 
+    [System.Serializable]
+    public class MouseSensitivitySettings
+    {
+        public float normalMouseSetting = 1;
+        public float aimingMouseSetting = .5f;
+    }
+    MouseSensitivitySettings mouseSettings = new MouseSensitivitySettings();
     public InputSettings inputSetting = new InputSettings();
     float forwardInput;
     float turnInput;
@@ -79,12 +86,17 @@ public class PlayerController : PlayerBase
     void getMovementInput()
     {
         forwardInput = Input.GetAxis(inputSetting.FORWARD_AXIS);//Get axis returns value from -1 to 1;
+        aimInput = Input.GetKey(KeyCode.Mouse1);
         turnInput = Input.GetAxis(inputSetting.TURN_AXIS);
         strafeInput = Input.GetAxis(inputSetting.STRAFE_AXIS);
         vOrbitInput = Input.GetAxisRaw(inputSetting.ORBIT_VERTICAL);//interpolated meaning it will return any value from -1 to 1
         jumpInput = Input.GetAxisRaw(inputSetting.JUMP_AXIS);//not interpolated you will get -1 0 or 1
+
+        if (aimInput) {
+            turnInput *= mouseSettings.aimingMouseSetting;
+            vOrbitInput *= mouseSettings.aimingMouseSetting;
+        }
         PlayerPosition.recieveInput(forwardInput, turnInput, jumpInput, strafeInput);
-        aimInput = Input.GetKey(KeyCode.Mouse1);
         CameraController.receieveInput(vOrbitInput, aimInput);
     }
 
