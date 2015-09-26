@@ -20,32 +20,3082 @@ Platform assembly: C:\Users\Eric\Desktop\astron\test_Data\Managed\UnityEngine.An
 Loading C:\Users\Eric\Desktop\astron\test_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: C:\Users\Eric\Desktop\astron\test_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\Users\Eric\Desktop\astron\test_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.134 seconds
-desktop: 1600x900 40Hz; virtual: 1600x900 at 0,0
+- Completed reload, in  0.050 seconds
+desktop: 1600x900 60Hz; virtual: 3040x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Eric\Desktop\astron\test_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Eric\Desktop\astron\test_Data\Managed\System.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 15810 -> priority: 1 
-  Thread -> id: 154f4 -> priority: 1 
-need to connect to the network before this scene can be played
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
+  Thread -> id: 19f54 -> priority: 1 
+  Thread -> id: 12a88 -> priority: 1 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.069559 ms
+UnloadTime: 1.512179 ms
 
-Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 399.
-Total: 0.632498 ms (FindLiveObjects: 0.028225 ms CreateObjectMapping: 0.025659 ms MarkObjects: 0.228366 ms  DeleteObjects: 0.349392 ms)
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 405.
+Total: 0.748819 ms (FindLiveObjects: 0.036350 ms CreateObjectMapping: 0.025231 ms MarkObjects: 0.262151 ms  DeleteObjects: 0.424231 ms)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.288237 ms
+UnloadTime: 0.309192 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 399.
+Total: 0.292086 ms (FindLiveObjects: 0.028652 ms CreateObjectMapping: 0.020954 ms MarkObjects: 0.220241 ms  DeleteObjects: 0.020954 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.372485 ms
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1558.
-Total: 0.701350 ms (FindLiveObjects: 0.067996 ms CreateObjectMapping: 0.046614 ms MarkObjects: 0.422520 ms  DeleteObjects: 0.164218 ms)
+Total: 0.865141 ms (FindLiveObjects: 0.074839 ms CreateObjectMapping: 0.075694 ms MarkObjects: 0.517032 ms  DeleteObjects: 0.196720 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 15c14 -> priority: 1 
-  Thread -> id: 15c18 -> priority: 1 
+  Thread -> id: 12e94 -> priority: 1 
+  Thread -> id: 10680 -> priority: 1 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at AIPatroller.lookForPlayers () [0x00000] in <filename unknown>:0 
+  at AIPatroller.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
