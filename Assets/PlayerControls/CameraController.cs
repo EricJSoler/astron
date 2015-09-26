@@ -51,6 +51,8 @@ public class CameraController : MonoBehaviour
     Vector3 destination = Vector3.zero;
     float vOrbitInput, hOrbitInput, zoomInput, hOrbitSnapInput;
     // Use this for initialization
+    float adjustedDistance = 0;
+    bool collision = false;
     void Awake()
     {
         initializedWithPlayer = false;
@@ -74,6 +76,9 @@ public class CameraController : MonoBehaviour
             // getInput();
             orbitTarget();
             zoomInOnTarget();
+           // if (collision) {
+            //    position.distanceFromTarget = adjustedDistance;
+           // }
             if (aiming) {
                 position.distanceFromTarget = -1.5f;
             }
@@ -87,7 +92,28 @@ public class CameraController : MonoBehaviour
         if (initializedWithPlayer && target) {
             moveToTarget();
             lookAtTarget();
+            //checkColision();
         }
+    }
+
+    public void checkColision()
+    {
+        bool forwardHit = false;
+        bool rightHit = false;
+        bool leftHit = false;
+        float  forwardDistance = (target.position - transform.position).magnitude;
+        RaycastHit hit;
+        Ray ray = new Ray(transform.position, target.position);
+
+        if (Physics.Raycast(ray ,out hit ,forwardDistance)) {
+            Debug.Log("RegisteredHit");
+            if (hit.collider.gameObject.tag != "Player") {
+                collision = true;
+                adjustedDistance = position.distanceFromTarget - hit.distance;
+            }
+        }
+        Debug.DrawRay(ray.origin, ray.direction * forwardDistance, Color.red, 1f);
+        
     }
     void getInput()
     {

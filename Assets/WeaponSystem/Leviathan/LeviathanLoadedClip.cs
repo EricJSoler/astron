@@ -28,7 +28,7 @@ public class LeviathanLoadedClip : WeapStateLoadedClip {
             }
 
         }
-        Debug.DrawRay(ray.origin, ray.direction * 1000, Color.red, 20f);
+      
         myWeapon.Visuals.muzzleFlash();
         myWeapon.weaponStats.clipAmmo -= 1;
         if (myWeapon.weaponStats.clipAmmo == 0) {

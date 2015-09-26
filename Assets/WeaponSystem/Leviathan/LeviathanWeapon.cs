@@ -11,7 +11,7 @@ public class LeviathanWeapon : WeaponI {
         m_ReloadingState = new LeviathanReloading(this);
         m_NotOnPlayer = new LeviathanNotOnPlayer(this);
         m_InInventory = new LeviathanInInventory(this);
-        firingSystem = new SingleShotFireControl(this);
+        firingSystem = new MachineGunFireControl(.3f, this);// FireControl(this);
         weaponStats.damage = 0;
         weaponStats.electric = 100;
         weaponStats.clipSize = 10;
