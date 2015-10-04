@@ -103,4 +103,14 @@ public class AIPatroller : AINavigation {
             myAgent.SetDestination(wayPoints[currentWayPoint].position);
         }
     }
+    void OnCollisionEnter(Collision col)
+    {
+        if (photonView.isMine) {
+            if (col.gameObject.tag == "Player") {
+                Player hitPlayer = col.gameObject.GetComponent<Player>();
+                float damageDelt = 15 * aiStats.attackDamage;
+                hitPlayer.photonView.RPC("recieveDamage", PhotonTargets.All, damageDelt);
+            }
+        }
+    }
 }

@@ -7,6 +7,7 @@ using System.Collections;
 // contain methods to manipulate the other components attached to the player
 public class Player : PlayerBase
 {
+    public Transform myShoulder;
     PauseMenu pauseMenuInScene;
     XpTimer myXpTimer;
 
@@ -21,6 +22,7 @@ public class Player : PlayerBase
     void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         PlayerPosition.SerializeState(stream, info);
+        Visuals.serializeState(stream, info);
     }
 
     void Update()
@@ -29,7 +31,7 @@ public class Player : PlayerBase
             PlayerController.GetInput();
             if (sCharacterClass.currentHealth <= 0) {
                 Debug.Log("your dead");
-                PhotonNetwork.Instantiate("CartoonExplosion", this.transform.position, transform.rotation, 0);
+               
                 photonView.RPC("destroyThisPlayer", PhotonTargets.AllBuffered, sCharacterClass.level);
             }
         }
@@ -69,6 +71,7 @@ public class Player : PlayerBase
         else if (!photonView.isMine) {
             gameObject.SetActive(false);//(gameObject);
         }
+        Visuals.deathVisuals();
     }
 
     public void requestXPOnDeath(Player shotMe)

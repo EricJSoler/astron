@@ -17,6 +17,7 @@ public class BaseWarrior : BaseCharacterClass
         m_stats.level += 1;
         m_stats.requiredExperience = 1000;
         m_stats.currentExperience = 0;
+		m_stats.electronics = 10;
     }
 
     void levelUp()
@@ -44,5 +45,10 @@ public class BaseWarrior : BaseCharacterClass
         }
 
     }
+
+
+
+
+
 
  }

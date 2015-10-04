@@ -19,7 +19,7 @@ public class KyleInstantiator : MonoBehaviour {
     void startInstantiatingOnNetwork()
     {
         StartCoroutine(performInstantiate());
-        if (count == 5) {
+        if (count == 10) {
             if(transform.position.x >= -150)
             {
                 Vector3 nextSpawn = new Vector3(transform.position.x - 5, transform.position.y, transform.position.z);

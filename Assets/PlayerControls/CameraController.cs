@@ -8,12 +8,12 @@ using System.Collections;
 public class CameraController : MonoBehaviour
 {
 
-    [System.Serializable]
+    //[System.Serializable]
     public class PositionSettings
     {
-        public Vector3 targetPosOffSet = new Vector3(0, 3.4f, 0);
+        public Vector3 targetPosOffSet = new Vector3(0, 1, 0);
         public float lookSmooth = 100f;
-        public float distanceFromTarget = -6;
+        public float distanceFromTarget = -3;
         public float zoomSmooth = 100;
         public float maxZoom = -2;
         public float minZoom = -15;
@@ -44,12 +44,15 @@ public class CameraController : MonoBehaviour
 
 
     //old
+    bool aiming = false;
     public Transform target;
     bool initializedWithPlayer;
     Vector3 targetPos = Vector3.zero;
     Vector3 destination = Vector3.zero;
     float vOrbitInput, hOrbitInput, zoomInput, hOrbitSnapInput;
     // Use this for initialization
+    float adjustedDistance = 0;
+    bool collision = false;
     void Awake()
     {
         initializedWithPlayer = false;
@@ -73,6 +76,14 @@ public class CameraController : MonoBehaviour
             // getInput();
             orbitTarget();
             zoomInOnTarget();
+           // if (collision) {
+            //    position.distanceFromTarget = adjustedDistance;
+           // }
+            if (aiming) {
+                position.distanceFromTarget = -1.5f;
+            }
+            else
+                position.distanceFromTarget = -3;
         }
 
     }
@@ -81,7 +92,28 @@ public class CameraController : MonoBehaviour
         if (initializedWithPlayer && target) {
             moveToTarget();
             lookAtTarget();
+            //checkColision();
         }
+    }
+
+    public void checkColision()
+    {
+        bool forwardHit = false;
+        bool rightHit = false;
+        bool leftHit = false;
+        float  forwardDistance = (target.position - transform.position).magnitude;
+        RaycastHit hit;
+        Ray ray = new Ray(transform.position, target.position);
+
+        if (Physics.Raycast(ray ,out hit ,forwardDistance)) {
+            Debug.Log("RegisteredHit");
+            if (hit.collider.gameObject.tag != "Player") {
+                collision = true;
+                adjustedDistance = position.distanceFromTarget - hit.distance;
+            }
+        }
+        Debug.DrawRay(ray.origin, ray.direction * forwardDistance, Color.red, 1f);
+        
     }
     void getInput()
     {
@@ -141,7 +173,9 @@ public class CameraController : MonoBehaviour
     }
     public void setCameraTarget(GameObject playerObj)
     {
-        target = playerObj.transform;
+        //GEt The Players Shoulder
+        Player thePlayer = playerObj.GetComponent<Player>();
+        target = thePlayer.myShoulder;
         if (target != null) {
             initializedWithPlayer = true;
         }
@@ -149,9 +183,10 @@ public class CameraController : MonoBehaviour
             Debug.LogError("Camera needs a target");
     }
 
-    public void receieveInput(float orbitX)
+    public void receieveInput(float orbitX, bool aim)
     {
         vOrbitInput = orbitX;
+        aiming = aim;
     }
 
     Camera m_Camera;
