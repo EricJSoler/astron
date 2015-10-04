@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//I think functions like reload might need to be updated with the current time so might add a new function
-//that sends the current 
+//WeaponStateI is the interface that all weapon states should inherit from
+//It allows for teh states to be used interchangeably. Different weapon states
+//may choose to implement the methods or not depending on what type of weapon
+//they are built for
 public class WeaponStateI  {
 
 

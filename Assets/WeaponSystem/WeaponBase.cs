@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// THe base class for weapons that is never implemented alone. It allows
+// for weapons to access their visuals and visuals to access their weapons.
 public class WeaponBase : Photon.MonoBehaviour {
 
     WeaponI m_Weapon;
