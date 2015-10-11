@@ -53,6 +53,7 @@ public class Player : PlayerBase
     {
         if (photonView.isMine) {
             sCharacterClass.loseHealth(amount);
+            HUD.recievePlayerHit();
         }
     }
 
