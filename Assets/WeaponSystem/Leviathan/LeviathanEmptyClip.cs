@@ -15,6 +15,7 @@ public class LeviathanEmptyClip : WeapStateEmptyClip {
             myWeapon.weaponStats.clipAmmo = myWeapon.weaponStats.clipSize;
         }
         else {
+   
             myWeapon.weaponStats.clipAmmo = myWeapon.weaponStats.currentAmmo;
             myWeapon.weaponStats.currentAmmo = 0;
         }
@@ -31,8 +32,6 @@ public class LeviathanEmptyClip : WeapStateEmptyClip {
     public override void switchFrom()
     {
         //need to define something here to turn off the visuals
-        myWeapon.Visuals.turnOffRenderers();
-        myWeapon.switchToInInventoryState();
     }
 
     public override void drop()

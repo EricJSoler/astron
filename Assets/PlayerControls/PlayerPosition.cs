@@ -110,9 +110,11 @@ public class PlayerPosition : PlayerBase
         }
     }
 
-    public void recieveInput(float fInput, float tInput, float jInput, float sInput)
+    public void recieveInput(float fInput, float tInput, float jInput, float sInput, bool aimStatus)
     {
         this.forwardInput = fInput;
+        if (aimStatus)
+            this.forwardInput *= .5f;
         this.turnInput = tInput;
         this.jumpInput = jInput;
         this.strafeInput = sInput;
@@ -120,11 +122,6 @@ public class PlayerPosition : PlayerBase
 
     void Run()
     {
-        //   if (Mathf.Abs(forwardInput) > inputDelay) {
-        //Move
-        //     velocity.z = moveSetting.forwardVel * forwardInput;
-        //rBody.velocity = transform.forward * forwardInput * moveSetting.forwardVel;
-        //}
         if (forwardInput > inputDelay) {
             velocity.z = sCharacterClass.movementSpeed * forwardInput;
         }
@@ -132,7 +129,7 @@ public class PlayerPosition : PlayerBase
             velocity.z = getBackwardVel() * forwardInput;
         }
         else
-            velocity.z = 0;// rBody.velocity = Vector3.zero;// zero velocity
+            velocity.z = 0;
         if (Mathf.Abs(strafeInput) > inputDelay) {
             velocity.x = getStrafeVel() * strafeInput;
         }

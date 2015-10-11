@@ -11,7 +11,7 @@ public class BaseWarrior : BaseCharacterClass
         m_stats.characterClassDescription = "Specialize in battle";
         m_stats.attackDamage = 1;
         m_stats.currentHealth = 100;
-        m_stats.movementSpeed = 12;
+        m_stats.movementSpeed = 8;
         m_stats.jumpPower = 20;
         m_stats.maxHealth = 100;
         m_stats.level += 1;

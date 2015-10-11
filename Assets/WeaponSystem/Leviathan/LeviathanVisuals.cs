@@ -4,6 +4,9 @@ using System.Collections;
 
 public class LeviathanVisuals : WeaponVisualsI {
     private ParticleSystem muzzleFlashParticle;
+
+    public GameObject[] meshes;
+    public Collider collider;
 	// Use this for initialization
 	void Start () {
 		muzzleFlashParticle = GetComponentInChildren<ParticleSystem> ();
@@ -22,12 +25,18 @@ public class LeviathanVisuals : WeaponVisualsI {
 
     public override void turnOffRenderers()
     {
-        Debug.Log("yoTurnOFFTHISGUNSRENDERERS");
+        foreach (GameObject element in meshes) {
+            element.SetActive(false);          
+        }
+        collider.enabled = false;
     }
 
     public override void turnOnRenderers()
     {
-        Debug.Log("yoTurnOnYourRenderers");
+        foreach (GameObject element in meshes) {
+            element.SetActive(true);
+        }
+        collider.enabled = true;        
     }
 
     public override void reloadAnimation()

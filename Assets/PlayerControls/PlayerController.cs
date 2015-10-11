@@ -23,7 +23,7 @@ public class PlayerController : PlayerBase
     public class MouseSensitivitySettings
     {
         public float normalMouseSetting = 1;
-        public float aimingMouseSetting = .5f;
+        public float aimingMouseSetting = .25f;
     }
     MouseSensitivitySettings mouseSettings = new MouseSensitivitySettings();
     public InputSettings inputSetting = new InputSettings();
@@ -60,11 +60,11 @@ public class PlayerController : PlayerBase
 		if (Input.GetKeyDown (KeyCode.E)) {
 			if (photonView.isMine)
 			{
-				PlayerInventory.photonView.RPC ("switchGun", PhotonTargets.All);//These prolly need to be buffered
+				PlayerInventory.photonView.RPC ("switchGun", PhotonTargets.AllBuffered);//These prolly need to be buffered
 			}
 		}
         if (Input.GetKeyDown(KeyCode.R)) {
-            PlayerInventory.photonView.RPC("reloadWeapon", PhotonTargets.All);//These prolly need to be buffered
+            PlayerInventory.photonView.RPC("reloadWeapon", PhotonTargets.AllBuffered);//These prolly need to be buffered
         }
 
 		PlayerInventory.listenCurrentGunControl();
@@ -96,7 +96,7 @@ public class PlayerController : PlayerBase
             turnInput *= mouseSettings.aimingMouseSetting;
             vOrbitInput *= mouseSettings.aimingMouseSetting;
         }
-        PlayerPosition.recieveInput(forwardInput, turnInput, jumpInput, strafeInput);
+        PlayerPosition.recieveInput(forwardInput, turnInput, jumpInput, strafeInput, aimInput);
         CameraController.receieveInput(vOrbitInput, aimInput);
     }
 

@@ -11,18 +11,18 @@ public class LeviathanWeapon : WeaponI {
         m_ReloadingState = new LeviathanReloading(this);
         m_NotOnPlayer = new LeviathanNotOnPlayer(this);
         m_InInventory = new LeviathanInInventory(this);
-        firingSystem = new MachineGunFireControl(.3f, this);// FireControl(this);
+        firingSystem = new SingleShotFireControl(this, .3f);
         weaponStats.damage = 0;
         weaponStats.electric = 100;
-        weaponStats.clipSize = 10;
-        weaponStats.clipAmmo = 10;
+        weaponStats.clipSize = 3;
+        weaponStats.clipAmmo = 3;
         weaponStats.maxAmmo = 30;
         weaponStats.currentAmmo = 30;
         weaponStats.reloadTime = 2f;
         weaponStats.range = 1000;
         m_currentState = m_NotOnPlayer;
-        
-        m_gunId = "Leviathan" + GameObject.FindObjectsOfType<LeviathanWeapon>().Length.ToString();
+
+        m_gunId = "Leviathan" + photonView.instantiationId;
     }
     ///Functions For Changing state shouldnt be called by 
     ///classes outside of this one except within the states
@@ -37,6 +37,15 @@ public class LeviathanWeapon : WeaponI {
     public override void switchToReloadState()
     {
         base.switchToReloadState();
+    }
+    public override void switchToInInventoryState()
+    {
+        m_currentState = m_InInventory;
+        Visuals.turnOffRenderers();
+    }
+    public override void switchToActiveOnPlayerState()
+    {
+        base.switchToActiveOnPlayerState();
     }
     ////////////////////////////////////////////////////////////////////////////
     ///Input Handling
@@ -88,10 +97,15 @@ public class LeviathanWeapon : WeaponI {
                 m_currentState = m_EmptyClipState;
             }
         }
+        else {
+            Visuals.turnOffRenderers();
+            m_currentState = m_InInventory;
+        }
     }
     public override void reload()
     {
         waitFor(weaponStats.reloadTime, m_currentState.reload,this.switchToLoadedClipState);
+        
     }
     
     ///////////////////////////////////////////////////////////////////////////

@@ -32,6 +32,7 @@ public class MachineGunFireControl : GunFireControl
 
                 nextFire = Time.time + fireRate;
                 myCurrentGun.currentState.shoot();
+                Debug.Log("Should be Firing");
             }
 
         }

@@ -6,13 +6,7 @@ public class PlayerInventory : PlayerBase {
 
     List<WeaponI> weapons = new List<WeaponI>();
     int activeWeaponIndex = 0;
-    /// <summary>
-    /// 
-    /// </summary>
-    
-    public GameObject[] guns;
-	int currentWeoponIndex = 0;
-	// Use this for initialization
+	
 	void Start (){
 	}
 
@@ -29,11 +23,16 @@ public class PlayerInventory : PlayerBase {
     [PunRPC]
     public void attachGun(string id) ///EH i need a good algo for this or something but i dont wanna write it right now
     {
+        Debug.Log("looking for gun id" + id);
         WeaponI[] allWeapons = GameObject.FindObjectsOfType<WeaponI>();
         foreach (WeaponI element in allWeapons) {
             if (element.GunID == id) {
-                //Debug.Log("Found a match");
-                element.attachWeapon(player, true);//change this bool to just add it to inventory
+                Debug.Log("Found a match");
+                if (!(weapons.Count > 0))
+                    element.attachWeapon(player, true);//change this bool to just add it to inventory
+                else
+                    element.attachWeapon(player, false);
+
                 weapons.Add(element);
                 break;
             }
@@ -42,20 +41,13 @@ public class PlayerInventory : PlayerBase {
 	[PunRPC]
 	public void switchGun()
 	{
-
+        if (weapons.Count > 0) {
+            weapons[activeWeaponIndex].switchToInInventoryState();
+            activeWeaponIndex = (activeWeaponIndex + 1) % weapons.Count;
+            weapons[activeWeaponIndex].switchToActiveOnPlayerState();
+        }
     }
 
-
-	public GameObject getCurrentWeapon()
-	{
-		return guns [currentWeoponIndex];
-
-	}
-
-	public int getCurrentWeaponIndex()
-	{
-		return currentWeoponIndex;
-	}
 
 
 	[PunRPC]

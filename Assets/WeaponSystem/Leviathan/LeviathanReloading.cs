@@ -15,7 +15,6 @@ public class LeviathanReloading : WeapStateReloading {
 
     public override void switchFrom()
     {
-        myWeapon.Visuals.turnOffRenderers();
-        myWeapon.switchToInInventoryState();
+      
     }
 }

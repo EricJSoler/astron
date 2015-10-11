@@ -1,0 +1,43 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class ArionEmptyClip : WeapStateEmptyClip {
+
+	// Use this for initialization
+    public ArionEmptyClip(WeaponI passed)
+    {
+        myWeapon = passed;
+    }
+    public override void reload()
+    {
+        int ammoNeededForFullClip = myWeapon.weaponStats.clipSize - myWeapon.weaponStats.clipAmmo;
+        if (ammoNeededForFullClip <= myWeapon.weaponStats.currentAmmo) {
+            myWeapon.weaponStats.currentAmmo -= ammoNeededForFullClip;
+            myWeapon.weaponStats.clipAmmo = myWeapon.weaponStats.clipSize;
+        }
+        else {
+            myWeapon.weaponStats.clipAmmo = myWeapon.weaponStats.currentAmmo;
+            myWeapon.weaponStats.currentAmmo = 0;
+        }
+        myWeapon.switchToReloadState();
+    }
+    public override void aim()
+    {
+        float crossHairRectLocX = Screen.width / 2 - (myWeapon.crossHairSettings.scale.x / 2);
+        float crossHairRectLocY = (Screen.height / 2) - (myWeapon.crossHairSettings.scale.y / 2) - 10;
+        GUI.DrawTexture(new Rect(new Vector2(crossHairRectLocX, crossHairRectLocY)
+            , myWeapon.crossHairSettings.scale), myWeapon.guiCrossHairTexture);
+    }
+
+    public override void switchFrom()
+    {
+        //need to define something here to turn off the visuals
+    }
+
+    public override void drop()
+    {
+        myWeapon.Visuals.turnOnRenderers();
+        myWeapon.switchToNotOnPlayerState();//need to write something here to drop the gameObject
+
+    }
+}

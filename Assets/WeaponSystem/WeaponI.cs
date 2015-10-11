@@ -91,7 +91,8 @@ public abstract class WeaponI : WeaponBase
     //GunId is set without the instance of the weaponI class and is used as a 
     //means to determine which weapon is which on the map so that remote players
     //can correctly pick up and drop weapons. all weapons should have different gun ids
-    protected string m_gunId;
+    
+    public string m_gunId;
 
     //return the id of the weapon all weapons should have a different gun id.
     public string GunID
@@ -112,6 +113,18 @@ public abstract class WeaponI : WeaponBase
     public virtual void switchToInInventoryState()
     {
         m_currentState = m_InInventory;
+        Visuals.turnOffRenderers();
+    }
+
+    public virtual void switchToActiveOnPlayerState()
+    {
+        Visuals.turnOnRenderers();
+        if (weaponStats.clipAmmo > 0)
+            m_currentState = m_LoadedClipState;
+        else
+            m_currentState = m_EmptyClipState;
+
+        Debug.Log(m_currentState);
     }
 
     public virtual void switchToNotOnPlayerState()
